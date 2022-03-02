@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+  /* border:1px solid red; */
+  width: 80%;
+  -webkit-box-shadow: 2px 2px gray;
+          box-shadow: 2px 2px gray;
+}
+
+.container .image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 25, 26, 0.8)), to(rgba(55, 51, 51, 0.8))), url("./img/intro.jpg");
+  background: linear-gradient(rgba(26, 25, 26, 0.8), rgba(55, 51, 51, 0.8)), url("./img/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.container .register {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
+  /* border: 1px solid red; */
+  background-color: #ccc6c6;
+}
+
+.container .register .formular {
+  /* border: 2px solid violet; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  gap: 10px;
+}
+
+.container .register .formular .input1 {
+  /* border:1px solid red; */
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.container .register .formular .input2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* border: 2px solid black; */
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.container .register input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc6c6;
+  padding-left: 10px;
+  height: 40px;
+}
+
+.container .register label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.container .register select {
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .register button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #571e1a;
+  color: white;
+}
+
+.container .register a {
+  /* border: 1px solid black; */
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-top: 15px;
+}
+
+.container .register a:hover {
+  text-decoration: underline;
+}
+
+.container .register img {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* border: 3px solid blac; */
+  }
+  .container .image {
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid black; */
+  }
+  .container .register {
+    width: 100%;
+    margin: 0px;
+    /* border: 1px solid red; */
+    padding: 0px;
+    text-align: center;
+  }
+  .container .register img {
+    width: 70%;
+    height: auto;
+  }
+  .container .register .formular {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+  }
+  .container .register .formular .input1 {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* margin:10px; */
+    /* justify-content: center; */
+  }
+  .container .register .formular .input2 {
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 0px;
+  }
+  .container .register input {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container .register select {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container .register select option {
+    border: none;
+  }
+  .container .register a {
+    margin-bottom: 10px;
+  }
+  .container .register a:hover {
+    text-decoration: underline;
+  }
+  .container .register label {
+    margin-bottom: 5px;
+  }
+}
+
+body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parrent {
+  /* border: 1px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 100px;
+  height: 500px;
+  -webkit-box-shadow: 2px 2px gray;
+          box-shadow: 2px 2px gray;
+  /* width: 800px; */
+  width: 50%;
+}
+
+.parrent .imgleft {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 25, 26, 0.8)), to(rgba(55, 51, 51, 0.8))), url("./img/intro.jpg ");
+  background: linear-gradient(rgba(26, 25, 26, 0.8), rgba(55, 51, 51, 0.8)), url("./img/intro.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.parrent .right {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+  /* border: 1px solid red; */
+  background-color: #ccc6c6;
+  text-align: center;
+}
+
+.parrent .right img {
+  width: 70%;
+  height: auto;
+}
+
+.parrent .right .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* margin: 10px; */
+  gap: 10px;
+  /* padding-left:30px; */
+  width: 100%;
+}
+
+.parrent .right .forms input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid white;
+  padding-left: 10px;
+  height: 40px;
+  width: 100%;
+}
+
+.parrent .right .forms label {
+  font-size: 16px;
+  /* border: 1px solid black; */
+}
+
+.parrent .right .forms button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #571e1a;
+  color: white;
+  width: 100%;
+}
+
+.parrent .right .forms a {
+  /* border: 1px solid black; */
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-top: 15px;
+}
+
+.parrent .right .forms a:hover {
+  text-decoration: underline;
+}
+
+.parrent .right .forms a img {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .parrent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+  }
+  .parrent .imgleft {
+    /* flex-direction: column; */
+    height: 500px;
+    width: 100%;
+  }
+  .parrent .right {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .parrent .right .forms {
+    margin: 0px;
+    width: 350px;
+    padding: 0px;
+  }
+  .parrent .right .forms input {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .parrent .right .forms button {
+    width: 50%;
+  }
+  .parrent .right .forms a {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.intro.css.map */

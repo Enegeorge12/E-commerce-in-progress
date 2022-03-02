@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.intro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image ">
+          <h1>Ethic Wine</h1>
+          <p>Un magazin de inrecedere !</p>
+        </div>
+        <div class="register">
+         <form action="./home.html" method="GET">
+          <img 
+                      src="./img/ethicLogo.png" alt="logo"
+                    />
+          <h1>Sing up Bellow !</h1>
+          <div class="formular">
+            <div class="input1">
+                <label for="field_first_name">First Name</label>
+                <input
+                id="field_first_name"
+                type="text"
+                name="First_name"
+                required
+                placeholder="First Name"
+                minlength="2"
+                maxlength="10"
+                size="15"
+              />
+          
+            
+              <label for="field_last_name>"> Last Name</label>
+              <input
+                id="field_last_name"
+                type="text"
+                name="First_name"
+                required
+                placeholder="Last Name"
+                minlength="2"
+                maxlength="10"
+                size="15"
+              />
+              <label for="country">City </label>
+              <input type="text"
+              id="city"
+              placeholder="City"
+              >
+            </div>
+            <div class="input2">
+                <label for="camp_email">Email</label>
+                <input
+               type="email"
+               name="adresa_postala"
+               id="camp_email"
+               title="Acceptam doar Google mails."
+               placeholder="Email Adress"
+               multiple
+               pattern=".+@gmail\.com"
+             />
+         
+               <label for="pass">Password</label>
+                         <input name="pass" id="field_pass" minlength="8" pattern="[a-z]"
+             placeholder="Password" />
+         
+              <label for="country"> Country </label>
+             <select>
+               <option value="">Select Country</option>
+               <option value="Bucuresti">Bucuresti</option>
+               <option value="Iasi ">Iasi</option>
+               <option value="Timisoara">Timisoara</option>
+               <option value="Cluj">Cluj</option>
+             </select>
+        
+            </div>
+        
+          </div>
+          <button type="submit">Sing Up</button>
+          <section>
+          <a href="intro.logIn.html">Alerdy have a acount ? Sing in !</a>
+        </section>
+        </form>
+</body>
+</html>
