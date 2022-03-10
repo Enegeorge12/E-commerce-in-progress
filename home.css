@@ -1,14 +1,17 @@
 body {
   margin: 0px;
-  background-color: #d3cbcb;
 }
 
 .space {
   margin-left: 130px;
   margin-right: 130px;
 }
+
+.logo {
+  padding: 10px;
+}
+
 .header {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +33,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 10px;
+  padding-top: 15px;
+  margin-right: 150px;
   gap: 10px;
 }
 
@@ -58,7 +62,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid white;
   /* gap: 100px; */
 }
 
@@ -166,7 +169,7 @@ body {
 
 .search button {
   vertical-align: middle;
-  border: 1px solid  white;
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -179,7 +182,6 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: flex-start;
-  border: 1px solid red;
 }
 
 h1 {
@@ -247,6 +249,7 @@ footer a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -271,7 +274,7 @@ footer a:hover {
   }
   .hamburger {
     display: inline;
-    padding: 10px;
+    margin: 10px;
   }
   #nav {
     display: -webkit-box;
@@ -285,4 +288,4 @@ footer a:hover {
     padding: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

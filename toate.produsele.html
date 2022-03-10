@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./toate.produsele.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header  ">
+              <div class="logo space">
+                <a href="/home.html">
+                  <img width="200px"
+                  src="https://ethicwine.ro/wp-content/uploads/2019/03/cropped-logo-mare-ethic.png"
+                />
+              </a>
+              </div> 
+          <div class="profil  ">
+            <div class="register">
+               <a href="/intro.html">Inregistrare |</a> </div>
+            <div class="login">
+              <a href="./intro.logIn.html">Login |</a>
+            </div>
+            <div class="contact">
+              <a href="./contact.html">Contact</a>
+            </div>
+            
+            <div class="cart">
+                <form action="./cart.page.html">
+                  <button type="submit" class="cart1">
+                    <img
+                      width="15px"
+                      src="https://img.icons8.com/ios/2x/shopping-cart.png"
+                    />
+                  </button>
+                 </form>
+            </div>
+          </div>
+        
+            </div>
+            <nav class="nav_bar ">
+                
+                
+                    <ul id="nav" >
+                        <li >
+                            <a href="#" >Categorii ▾</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Vinuri Albe</a></li>
+                              <li><a href="#">Vinuri Rosii</a></li>
+                              <li><a href="#">Vinuri Rose</a></li>
+                          </li>
+                    </ul>
+                     
+                        <li><a href="./about.html">Despre Noi</a></li>
+                        <li><a href="./livrare.html">Livrare</a></li>
+                        <li>
+                          <a href="#">Regiuni ▾</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Romania</a></li>
+                            <li><a href="./franta.html">Franta</a></li>
+                            <li><a href="#">Spania</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./toate.produsele.html">Toate produsele</a></li>
+                    
+                          <li>
+                            <img class="hamburger"
+                            width="20px;"
+                            src="https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
+                          />
+                          </li>
+                        </ul>
+                </div>
+              </nav>
+
+    </header>
+      
+    <main >
+        <section>
+            <div class="search">
+                <form action="#">
+                  <input type="text" placeholder="Search.." name="search" class="fontSearch"/>
+                  <button type="submit">
+                    <img
+                      width="10px"
+                      src="https://img.icons8.com/ios-filled/344/search--v1.png"
+                    />
+                  </button>
+                </form>
+              </div>
+        </section>
+   
+      <div class="main">
+          <div class="filter">
+            <div class="brand">
+              <section>Producator</section>
+              <label>
+                <input type="checkbox" name="davino" />Davino
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Davino
+              </label>
+              <label>
+                <input type="checkbox" name="davino" />Davino
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Davino
+              </label>
+            </div>
+            <div class="price_checkbox">
+              <section>Pret</section>
+              <label> <input type="checkbox" name="price" />20-50 Lei </label>
+              <label> <input type="checkbox" name="price" />50-100 Lei </label>
+              <label> <input type="checkbox" name="price" />100-200 Lei </label>
+            </div>
+            <div class="type_wine">
+              <section>Soiuri</section>
+              <label>
+                <input type="checkbox" name="type_wine" />Vinuri Rose
+              </label>
+              <label>
+                <input type="checkbox" name="type_wine" />Vinuri Rosii</label
+              >
+              <label>
+                <input type="checkbox" name="type_wine" />Vinuri Albe
+              </label>
+            </div>
+          </div>
+    
+          <!-- <div class="type_wine">
+              <section>Soiuri</section>
+              <label> <input type="checkbox" checked="type_wine" />Vinuri Rose </label>
+              <label> <input type="checkbox" checked="type_wine" />Vinuri Rosii</label>
+              <label> <input type="checkbox" checked="type_wine" />Vinuri Albe </label>
+            </div>
+          </div> -->
+          <div class="container">
+            <div class="order">
+              <h1>Rezultate</h1>
+              <div class="filtru">
+                <label for="Filtreaza"> Filtreaza</label>
+                <select>
+                  <option value="Pret.crescator">Pret crescator</option>
+                  <option value="Pret.descrescator">Pret descrescator</option>
+                </select>
+                <label for="Rezultate"> Rezultate </label>
+                <select>
+                  <option value="10">10</option>
+                  <option value="15 ">15</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+            </div>
+    
+            <div class="product">
+              <div class="card">
+                <div class="img">
+                  <div class="card__overlay">
+                    <div class="overlay__text">
+                      <button type="button">Cumpara</button>
+                      <a href="#" class="button">Detalii produs</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="titile_produc">
+                  <h3>Mountain Trips</h3>
+                  <p class="price">150 Lei</p>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="img">
+                  <div class="card__overlay">
+                    <div class="overlay__text">
+                      <button type="button">Cumpara</button>
+                      <a href="#" class="button">Detalii produs</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="titile_produc">
+                  <h3>Mountain Trips</h3>
+                  <p class="price">150 Lei</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <div class="card__overlay">
+                    <div class="overlay__text">
+                      <button type="button">Cumpara</button>
+                      <a href="#" class="button">Detalii produs</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="titile_produc">
+                  <h3>Mountain Trips</h3>
+                  <p class="price">150 Lei</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <div class="card__overlay">
+                    <div class="overlay__text">
+                      <button type="button">Cumpara</button>
+                      <a href="#" class="button">Detalii produs</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="titile_produc">
+                  <h3>Mountain Trips</h3>
+                  <p class="price">150 Lei</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <div class="card__overlay">
+                    <div class="overlay__text">
+                      <button type="button">Cumpara</button>
+                      <a href="#" class="button">Detalii produs</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="titile_produc">
+                  <h3>Mountain Trips</h3>
+                  <p class="price">150 Lei</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <aside>
+    </aside>
+
+<!-- <div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div> -->
+    <footer >
+      <div class="footer space">
+        <ul class="list">
+            Orar
+            <li>Luni: 13 – 22</li>
+            <li>Marti – Vineri: 11 – 22</li>
+            <li>Sambata: 11 – 22</li>
+            <li>Duminica: ÎNCHIS</li>
+          </ul>   
+      
+        <ul class="list">
+            Contact
+            <li>BANU ANTONACHE 55, Piata Floreasca, Bucuresti</li>
+            <li>Email: office@ethicwine.ro</li>
+            <li>Fix: 021 367 2283</li>
+          </ul>
+           
+          <ul class="list">
+            <li><a href="./livrare.html">
+              Livrare</a></li>
+            <li>Termeni si conditii</li>
+            <li>Anpc</li>
+            <li>Cum cumpar?</li>
+          </ul>
+      </div>
+      <hr/ color="gray">
+      <div class="icon_footer">
+          <a href="https://www.facebook.com/ethicwine.ro/" target="_blank">
+
+        <img
+        width="20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/768px-Facebook_icon_2013.svg.png"> 
+          </a>
+      </div>
+      <div class="icon_footer">
+          <a href="https://www.instagram.com/ethic_wine/" target="_blank">
+            <img width="20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png">
+        </a>
+      </div>
+      </footer>
+
+
+</body>
+</html>
