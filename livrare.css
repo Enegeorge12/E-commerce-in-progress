@@ -1,0 +1,254 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.space {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profil {
+  /* border: 1px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 15px;
+  margin-right: 150px;
+  gap: 10px;
+}
+
+.profil a {
+  color: black;
+  text-decoration: none;
+}
+
+.profil a:hover {
+  text-decoration: underline;
+}
+
+#nav {
+  margin: 0px;
+  /* padding: 0px; */
+  list-style: none;
+  background-color: #571e1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* gap: 100px; */
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  /* margin-left:80px; */
+}
+
+#nav li a {
+  display: block;
+  padding: 8px 20px;
+  /* margin-left:30px; */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#nav li a:hover {
+  background-color: gray;
+}
+
+#nav li ul.dropdown {
+  min-width: 100%;
+  /*Set width of the dropdown*/
+  background-color: #571e1a;
+  display: none;
+  position: absolute;
+  z-index: 5;
+  left: 0px;
+  padding: 0px;
+}
+
+#nav li:hover ul.dropdown {
+  display: block;
+  /* Display the dropdown */
+}
+
+#nav li ul.dropdown li {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+main {
+  text-align: center;
+}
+
+main .img.map {
+  width: 50%;
+}
+
+main .livrareBuc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .livrareRapid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #571e1a;
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 200px;
+  /* margin:50px; */
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.icon_footer {
+  display: inline-block;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .space {
+    margin: 0px;
+    padding: 20px;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  ul {
+    padding: 0px;
+  }
+  .profil {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /* border: 1px solid black; */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+    /* margin-bottom:20px; */
+  }
+  .list {
+    text-align: center;
+    padding: 10px;
+  }
+  .nav_bar {
+    text-align: center;
+  }
+  #nav li a {
+    display: none;
+  }
+  .hamburger {
+    display: inline;
+    margin: 10px;
+  }
+  #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=livrare.css.map */
