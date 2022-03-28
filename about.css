@@ -110,7 +110,8 @@ body {
   display: none;
 }
 
-.main {
+.main-content {
+  padding-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,60 +119,53 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
   gap: 50px;
 }
 
-.adresa {
+.main-content .leftimg {
   border: 1px solid gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 10px 10px gray;
+          box-shadow: 10px 10px 10px 10px gray;
   width: 50%;
+}
+
+.main-content p {
+  padding: 20px;
+}
+
+.main-content .rightimg {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
   -webkit-box-shadow: 10px 10px 10px 10px gray;
           box-shadow: 10px 10px 10px 10px gray;
 }
 
-.orar {
-  width: 50%;
-  border: 1px solid gainsboro;
-  -webkit-box-shadow: 10px 10px 10px 10px gray;
-          box-shadow: 10px 10px 10px 10px gray;
-}
-
-.form-contact {
-  width: 100%;
+.main-content h1 {
   margin-top: 100px;
-  border: 1px solid gainsboro;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 10px 10px 10px 10px gray;
-          box-shadow: 10px 10px 10px 10px gray;
-  gap: 30px;
-}
-
-.form-contact .form {
-  border: 1px solid gainsboro;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 70%;
-  gap: 10px;
-  padding: 30px;
 }
 
 h1 {
@@ -241,17 +235,24 @@ footer a:hover {
             justify-content: center;
     width: 100%;
   }
-  .main {
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main .orar {
+  .main-content .leftimg {
     width: 100%;
+    padding: 0px;
+    padding-top: 30px;
   }
-  .main .adresa {
+  .main-content .rightimg {
     width: 100%;
+    padding: 0px;
+    padding-top: 30px;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -290,4 +291,4 @@ footer a:hover {
     padding: 0;
   }
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=about.css.map */

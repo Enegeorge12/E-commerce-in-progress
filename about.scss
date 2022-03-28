@@ -92,61 +92,48 @@ body{
     .hamburger{
     display: none;
   }
-  
-  .main{
-    
+ .main-content{
+   padding-top: 70px;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   gap: 50px;
+  .leftimg{
+    border: 1px solid gainsboro;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-   
-    
-   }
-   .adresa{
-     border:1px solid gainsboro;
-     width: 50%;
-     box-shadow: 10px 10px 10px 10px gray;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;  
+    box-shadow: 10px 10px 10px 10px gray;
+    width: 50%;
 
-   }
-   .orar{
-     width: 50%;
-     border:1px solid gainsboro;
-     box-shadow: 10px 10px 10px 10px gray;
-
-   }
-   .form-contact{
-       width: 100%;
-       margin-top:  100px;
-       border: 1px solid gainsboro;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       box-shadow: 10px 10px 10px 10px gray;
-       gap: 30px;
-       
-    //    padding: 30px;
-     
-       .form{
-           border: 1px solid gainsboro;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-        
-           width: 70%;
-           gap: 10px;
-           padding: 30px;
-           
-        
-       }
-       
-   }
+  }
+  p{
+    padding: 20px;
+  }
+  .rightimg{
+    width: 50%;
+    // border: 1px solid gainsboro;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    // gap: 5px;
+    box-shadow: 10px 10px 10px 10px gray;
+  }
+  h1{
+    margin-top: 100px;
+  }
+ }
    
-   h1{
+
+   
+
+  h1{
     text-align: center;
   }
-   
-
-  
   footer {
    background-color: $color;
    color: $colorw;
@@ -197,15 +184,22 @@ body{
       justify-content: center;
       width: 100%;
     }
-    .main{
-        flex-direction: column;
-        .orar{
-            width: 100%;
-        }
-        .adresa{
-            width: 100%;
-        }
+    .main-content{
+      display: flex;
+      flex-direction: column;
+    
+      .leftimg{
+        width: 100%;
+        padding: 0px;
+        padding-top: 30px;
+      }
+      .rightimg{
+        width: 100%;
+        padding: 0px;
+        padding-top: 30px;
+      }
     }
+   
     .footer{
     flex-direction: column;
     justify-items: center;
