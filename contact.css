@@ -155,6 +155,7 @@ body {
   -webkit-box-shadow: 10px 10px 10px 10px gray;
           box-shadow: 10px 10px 10px 10px gray;
   gap: 30px;
+  margin: 0px;
 }
 
 .form-contact .form {
