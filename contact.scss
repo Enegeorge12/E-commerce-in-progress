@@ -10,23 +10,36 @@ body{
     margin-right:130px;
     
   }
- .logo{
-   padding: 10px;
-  //  border: 1px solid black;
- }
+ 
 .header{
   // border:1px solid black;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  
 }
 .profil {
-  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 50%;
+  //  border: 1px solid black; 
+  margin-right: 230px;
+  cursor: pointer;
+  padding: 10px;
+  }
+  .logo {
     display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    margin-right: 130px;
-    gap: 10px;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 150px;
+    padding: 10px;
+    // border: 1px solid black;
   }
    .profil a{
     color: black;
@@ -105,12 +118,13 @@ body{
     
    }
    .adresa{
-     border:1px solid gainsboro;
+     border-radius: 10px;
      width: 50%;
      box-shadow: 10px 10px 10px 10px gray;
 
    }
    .orar{
+    border-radius: 10px;
      width: 50%;
      border:1px solid gainsboro;
      box-shadow: 10px 10px 10px 10px gray;
@@ -118,7 +132,7 @@ body{
    }
    .form-contact{
        width: 100%;
-       
+       border-radius: 50%;
        margin-top:  100px;
       
       //  border: 1px solid red;
@@ -185,6 +199,7 @@ input{
   border: none;
   width: 50%;
   padding: 10px;
+  
 }
 textarea{
   border: none;
@@ -240,15 +255,20 @@ textarea{
       margin: 0px;
     }
    .header{
-      flex-direction: column;
-      text-align: center;
-      // width: 100%;
+    flex-direction: column;
+    justify-content: center;  
+     gap: 20px;
      }
     .profil{
-      flex-direction: row;
-      /* border: 1px solid black; */
       justify-content: center;
       width: 100%;
+      margin: 0px;
+      margin-bottom: 20px;;
+    }
+    .logo {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
     }
     .main{
         flex-direction: column;
@@ -300,4 +320,12 @@ textarea{
         padding: 0; 
       }
     
+    }
+    @media (max-width: 1000px) {
+      .profil{
+        margin-right:200px;
+      }
+      .logo{
+        margin-left:20px;
+      }
     }

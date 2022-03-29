@@ -8,6 +8,12 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-left: 150px;
   padding: 10px;
 }
 
@@ -22,10 +28,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .profil {
-  /* border: 1px solid red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,9 +43,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 15px;
-  margin-right: 130px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
+  width: 50%;
+  margin-right: 230px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .profil a {
@@ -140,6 +157,7 @@ body {
   -webkit-box-shadow: 10px 10px 10px 10px gray;
           box-shadow: 10px 10px 10px 10px gray;
   width: 50%;
+  border-radius: 10px;
 }
 
 .main-content p {
@@ -147,6 +165,7 @@ body {
 }
 
 .main-content .rightimg {
+  border-radius: 10px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,18 +241,25 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
   .profil {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    /* border: 1px solid black; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100%;
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-content {
     display: -webkit-box;

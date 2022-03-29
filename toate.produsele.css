@@ -13,10 +13,6 @@ body {
   margin-right: 130px;
 }
 
-.logo {
-  padding: 10px;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +24,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  gap: 10px;
 }
 
 .profil {
@@ -39,9 +39,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 15px;
-  margin-right: 150px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
+  width: 50%;
+  margin-right: 230px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-left: 150px;
+  padding: 10px;
 }
 
 .profil a {
@@ -390,18 +407,25 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
   .profil {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    /* border: 1px solid black; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100%;
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     -webkit-box-orient: vertical;

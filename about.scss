@@ -11,22 +11,33 @@ body{
     
   }
  .logo{
-   padding: 10px;
-  //  border: 1px solid black;
+  display: flex;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-left: 150px;
+  padding: 10px;
+  // border: 1px solid black;
  }
 .header{
   // border:1px solid black;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 .profil {
-  /* border: 1px solid red; */
-    display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    margin-right: 130px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 50%;
+  //  border: 1px solid black; 
+  margin-right: 230px;
+  cursor: pointer;
+  padding: 10px;
   }
    .profil a{
     color: black;
@@ -107,12 +118,14 @@ body{
     padding: 20px;  
     box-shadow: 10px 10px 10px 10px gray;
     width: 50%;
+    border-radius: 10px;
 
   }
   p{
     padding: 20px;
   }
   .rightimg{
+   border-radius: 10px;
     width: 50%;
     // border: 1px solid gainsboro;
     display: flex;
@@ -174,16 +187,22 @@ body{
     .space{
       margin: 0px;
     }
-   .header{
+    .header{
       flex-direction: column;
-      text-align: center;
-     }
-    .profil{
-      flex-direction: row;
-      /* border: 1px solid black; */
-      justify-content: center;
-      width: 100%;
-    }
+      justify-content: center;  
+       gap: 20px;
+       }
+      .profil{
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;;
+      }
+      .logo {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+      }
     .main-content{
       display: flex;
       flex-direction: column;

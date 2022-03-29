@@ -7,10 +7,6 @@ body {
   margin-right: 130px;
 }
 
-.logo {
-  padding: 10px;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,10 +18,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .profil {
-  /* border: 1px solid red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,9 +33,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 15px;
-  margin-right: 150px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
+  width: 50%;
+  margin-right: 230px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-left: 150px;
+  padding: 10px;
 }
 
 .profil a {
@@ -110,48 +127,6 @@ body {
   display: none;
 }
 
-.search {
-  display: inline-block;
-}
-
-.fontSearch {
-  background-color: transparent;
-  color: white;
-  width: 200px;
-  border: 1px solid white;
-  margin-bottom: 40px;
-}
-
-.fontSearch::-webkit-input-placeholder {
-  color: white;
-  font-size: 14px;
-  padding: 10px;
-}
-
-.fontSearch:-ms-input-placeholder {
-  color: white;
-  font-size: 14px;
-  padding: 10px;
-}
-
-.fontSearch::-ms-input-placeholder {
-  color: white;
-  font-size: 14px;
-  padding: 10px;
-}
-
-.fontSearch::placeholder {
-  color: white;
-  font-size: 14px;
-  padding: 10px;
-}
-
-.search button {
-  vertical-align: middle;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +155,8 @@ main {
           justify-content: center;
   /* margin-left: 20px; */
   width: 100%;
+  -webkit-box-shadow: 10px 10px 10px 10px gray;
+          box-shadow: 10px 10px 10px 10px gray;
 }
 
 .first_line {
@@ -255,13 +232,16 @@ input[type="number"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 25%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
   gap: 14px;
+  -webkit-box-shadow: 1px 1px 1px 1px gray;
+          box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10%;
 }
 
 .contactDetalis #name {
@@ -280,7 +260,7 @@ input[type="number"] {
 }
 
 .metod_pay {
-  width: 30%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,6 +271,9 @@ input[type="number"] {
   border: 1px solid gainsboro;
   padding: 20px;
   gap: 3px;
+  -webkit-box-shadow: 1px 1px 1px 1px gray;
+          box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10%;
 }
 
 .metod_pay input[type=checkbox] {
@@ -304,7 +287,7 @@ input[type="number"] {
 
 .payment {
   border: 1px solid gainsboro;
-  width: 30%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +297,9 @@ input[type="number"] {
           flex-direction: column;
   padding: 20px;
   gap: 20px;
+  -webkit-box-shadow: 1px 1px 1px 1px gray;
+          box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10%;
 }
 
 .payment .card_accept {
@@ -467,18 +453,25 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
   .profil {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    /* border: 1px solid black; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100%;
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     -webkit-box-orient: vertical;

@@ -10,24 +10,20 @@
 <body>
 
     <header>
-        <div class="header ">
-              <div class="logo space">
-                <a href="/home.html">
-                  <img width="200px"
-                  src="./img/ethicLogo.png"
-                />
-              </a>
-              </div> 
-          <div class="profil ">
-            <div class="register">
-               <a href="/intro.html">Inregistrare |</a> </div>
-            <div class="login">
-              <a href="./intro.logIn.html">Login |</a>
-            </div>
-            <div class="contact">
-              <a href="./contact.html">Contact</a>
-            </div>
-            <form action="./cart.page.html">
+      <div class="header ">
+        <div class="logo">
+          <a href="./home.html">
+            <img width="200px"
+              src="./img/ethicLogo.png"
+              alt="logo-img"
+            />
+          </a>
+        </div>
+        <div class="profil">
+          <a href="./intro.logIn.html">Login</a>
+          <a href="./contact.html">Contact </a>
+          <a href="./intro.html">Register</a>
+          <form action="./cart.page.html">
             <div class="cart">
              
               <button type="submit" class="cart1">
@@ -36,11 +32,10 @@
                   src="https://img.icons8.com/ios/2x/shopping-cart.png"
                 />
               </button>
+            </div>
             </form>
-            </div>
-          </div>
-        
-            </div>
+        </div>
+      </div>
             <nav class="nav_bar ">
                     <ul id="nav" >
                         
@@ -231,7 +226,7 @@
 
               </div>
               <div class="submit">
-                <button type="submit" formaction="./home.html">
+                <button type="submit" formaction="./home.html"onclick="myFunction()">
                   Plasare Comanda
                 </button>
                 <button type="reset" value="Reset">Reset</button>
@@ -242,14 +237,7 @@
   </div>
  
     </main>
-    <aside>
-    </aside>
-
-<!-- <div style="text-align:center">
-<span class="dot"></span> 
-<span class="dot"></span> 
-<span class="dot"></span> 
-</div> -->
+    
     <footer >
       <div class="footer space">
         <ul class="list">
@@ -289,5 +277,11 @@
         </a>
       </div>
       </footer>
+      <script>
+        function myFunction() {
+       alert("Multumim pentru comanda ! O zi buna !");
+     }
+     </script>
+     
 </body>
 </html>
