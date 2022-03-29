@@ -39,26 +39,25 @@ body{
 
   #nav{
    margin: 0px;
-    /* padding: 0px; */
+    // padding-left: 130px; 
     list-style: none;
     background-color:$color;  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    // border:1px solid $colorw;
+    justify-content: space-evenly;
+    justify-items: center;
 
-    /* gap: 100px; */
-   
-   
+    // border:1px solid $colorw;
   }
   #nav li {
     display: inline-block;
     position: relative;
     line-height: 21px;
-    /* margin-left:80px; */
+    //  margin-left:80px; 
     
   }
   #nav li a {
+    // border: 1px solid white;
     display: block;
     padding: 8px 20px;
     /* margin-left:30px; */
@@ -92,7 +91,10 @@ body{
     .hamburger{
     display: none;
   }
-  
+  main{
+    margin-top: 150px;
+    
+  }
   .main{
     
     display: flex;
@@ -116,31 +118,81 @@ body{
    }
    .form-contact{
        width: 100%;
+       
        margin-top:  100px;
-       border: 1px solid gainsboro;
+      
+      //  border: 1px solid red;
        display: flex;
        flex-direction: column;
-       justify-content: center;
+       align-self: center;
        box-shadow: 10px 10px 10px 10px gray;
        gap: 30px;
-       margin: 0px;
-    //    padding: 30px;
-     
+      //  margin: 0px;
        .form{
-           border: 1px solid gainsboro;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           
-           width: 70%;
-           gap: 10px;
-           padding: 30px;
-           
-        
+        width: 100%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
        }
-       
+       .button{
+        //  background-color: red;
+         display: flex;
+         justify-content: center;
+         width: 50%;
+         button{
+          background-color: $color;
+          color: $colorw;
+          width: 50%;
+          border: none;
+          box-shadow: 3px 3px 3px 3px gray;
+          // margin-top: 50px;
+          margin: 50px;
+         }
+       }
    }
-   
+   .name{
+    display: flex;
+    flex-direction: row;
+    //  border: 1px solid red; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+  }
+  .email{
+    display: flex;
+    flex-direction: row;
+    //  border: 1px solid red; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+  }
+  .descriere{
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid red; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+  }
+input{
+  box-shadow: 3px 3px 3px 3px gray;
+  border: none;
+  width: 50%;
+  padding: 10px;
+}
+textarea{
+  border: none;
+  box-shadow: 3px 3px 3px 3px gray;
+  width: 50%;
+  padding: 10px;
+  
+}
    h1{
     text-align: center;
   }
@@ -190,6 +242,7 @@ body{
    .header{
       flex-direction: column;
       text-align: center;
+      // width: 100%;
      }
     .profil{
       flex-direction: row;
@@ -206,6 +259,16 @@ body{
             width: 100%;
         }
     }
+    .name{
+      width: 100%;
+    }
+    .email{
+      width: 100%;
+    }
+    .descriere{
+      width: 100%;
+    }
+   
     .footer{
     flex-direction: column;
     justify-items: center;

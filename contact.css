@@ -49,7 +49,6 @@ body {
 
 #nav {
   margin: 0px;
-  /* padding: 0px; */
   list-style: none;
   background-color: #571e1a;
   display: -webkit-box;
@@ -59,17 +58,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* gap: 100px; */
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
 }
 
 #nav li {
   display: inline-block;
   position: relative;
   line-height: 21px;
-  /* margin-left:80px; */
 }
 
 #nav li a {
@@ -110,6 +108,10 @@ body {
   display: none;
 }
 
+main {
+  margin-top: 150px;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +143,6 @@ body {
 .form-contact {
   width: 100%;
   margin-top: 100px;
-  border: 1px solid gainsboro;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,17 +150,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-shadow: 10px 10px 10px 10px gray;
           box-shadow: 10px 10px 10px 10px gray;
   gap: 30px;
-  margin: 0px;
 }
 
 .form-contact .form {
-  border: 1px solid gainsboro;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,12 +166,98 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-contact .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
-  gap: 10px;
-  padding: 30px;
+  width: 50%;
+}
+
+.form-contact .button button {
+  background-color: #571e1a;
+  color: white;
+  width: 50%;
+  border: none;
+  -webkit-box-shadow: 3px 3px 3px 3px gray;
+          box-shadow: 3px 3px 3px 3px gray;
+  margin: 50px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.descriere {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 50%;
+}
+
+input {
+  -webkit-box-shadow: 3px 3px 3px 3px gray;
+          box-shadow: 3px 3px 3px 3px gray;
+  border: none;
+  width: 50%;
+  padding: 10px;
+}
+
+textarea {
+  border: none;
+  -webkit-box-shadow: 3px 3px 3px 3px gray;
+          box-shadow: 3px 3px 3px 3px gray;
+  width: 50%;
+  padding: 10px;
 }
 
 h1 {
@@ -252,6 +337,15 @@ footer a:hover {
     width: 100%;
   }
   .main .adresa {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+  }
+  .descriere {
     width: 100%;
   }
   .footer {

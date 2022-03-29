@@ -18,7 +18,7 @@
                 />
               </a>
               </div> 
-          <div class="profil ">
+          <div class="profil space">
             <div class="register">
                <a href="/intro.html">Inregistrare |</a> </div>
             <div class="login">
@@ -99,31 +99,41 @@
             </div>
          </div>
          <div class="form-contact">
-             <form action="./home.html">
+             <form action="./home.html" method="get">
              <div class="title"><h1>Fromular de contact</h1></div>
              <div class="form" >
-            <label for="name" >Nume</label>
-            <input type="text" name="name" id="name" placeholder="Nume">
-            <label for="camp_email">Email</label>
-            <input
-           type="email"
-           name="adresa_postala"
-           id="camp_email"
-           title="Acceptam doar Google mails."
-           placeholder="Email Adress"
-           multiple
-           pattern=".+@gmail\.com"
-         />
-         <label for="field_text_descriere">Descriere:</label>
-        </br>
-           <textarea name="descriere" 
-           id="field_text_descriere" 
-           rows="4" cols="50"
-           placeholder="Indroduceti descrierea"
-           minlength="10"
-            maxlength="100" >
-          </textarea>
+               <div class="name">
+                <label for="name" >Nume : *</label>
+                <input type="text" name="name" id="name" placeholder="Nume" >
+                
+              </div>
+              <div class="email">
+                <label for="camp_email">Email : *</label>
+                <input
+               type="email"
+               name="adresa_postala"
+               id="camp_email"
+               title="Acceptam doar Google mails."
+               placeholder="Email Adress"
+               multiple
+               pattern=".+@gmail\.com"
+               
+             />
+            </div>
+            <div class="descriere">
+             <label for="field_text_descriere">Descriere : *</label>
+               <textarea name="descriere" 
+               id="field_text_descriere" 
+               rows="4" cols="50"
+               
+               minlength="10"
+                maxlength="100" >
+              </textarea>
+            </div>
+          
+         <div class="button">
           <button type="submit" onclick="myFunction()" >Trimite</button>
+         </div>
         </form>
         </div>
         </div>

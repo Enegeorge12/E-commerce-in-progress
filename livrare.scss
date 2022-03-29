@@ -47,7 +47,7 @@ body{
     background-color:$color;  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     // border:1px solid $colorw;
 
     /* gap: 100px; */
