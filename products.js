@@ -1,4 +1,4 @@
-import "./styles.css";
+
 const produse = [
   // Franta
   {
@@ -627,13 +627,16 @@ const produse = [
   }
 ];
 console.log(produse);
-// const mainProduse = document.querySelector(".produse");
-// document.body.appendChild(mainProduse);
+
 const vinuri = document.createElement("ul");
-document.body.appendChild(vinuri);
+vinuri.classList.add("vinuri");
+
+const mainProduse = document.querySelector("#product");
+mainProduse.appendChild(vinuri);
 
 for (let i of produse) {
   let elem = document.createElement("li");
+  elem.classList.add("li-vinuri");
   elem.textContent = i.name;
   elem.style.listStyle = "none";
   vinuri.appendChild(elem);
@@ -647,8 +650,15 @@ for (let i of produse) {
   elem.appendChild(imagine);
 
   let pret = document.createElement("button");
+  pret.classList.add("price-button");
   pret.textContent = i.price;
   elem.appendChild(pret);
+
+  
+  let detailsButton = document.createElement("button");
+  detailsButton.classList.add("details-button");
+  detailsButton.textContent = "Detalii";
+  elem.appendChild(detailsButton);
 }
 document.querySelector("body").addEventListener("blur", function (event) {
   event.preventDefault();

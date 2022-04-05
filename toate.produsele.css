@@ -265,64 +265,28 @@ select {
   /* border: 1px solid black; */
 }
 
-.card {
-  width: 150px;
-  height: 300px;
-  border: 1px solid black;
-  text-align: center;
-}
-
-.img {
-  position: relative;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  background-image: url("./img/intro.jpg");
-  background-position: center;
-  background-size: cover;
+.vinuri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  height: 60%;
+  border: 1px solid gainsboro;
+  padding: 0px;
+  background-color: gainsboro;
 }
 
-.card__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: #0a050a7b;
-}
-
-.img:hover .card__overlay {
-  opacity: 1;
-}
-
-.overlay__text button {
-  width: 100%;
-  margin-top: 50px;
-  background-color: #571e1a;
-  color: white;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.overlay__text a {
-  color: white;
-  width: 100%;
-  text-decoration: none;
-  margin-top: 10px;
-  background-color: #571e1a;
-  color: white;
-  border: 1px solid white;
-}
-
-.overlay__text {
-  width: 100%;
+.li-vinuri {
+  background-color: white;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,9 +294,41 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid gainsboro;
+  -webkit-box-shadow: 2px 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 20px;
+  width: 10%;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  list-style: none;
+}
+
+.price-button {
+  padding: 10px;
+  width: 100%;
+  background-color: #571e1a;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.details-button {
+  padding: 10px;
+  width: 100%;
+  background-color: #571e1a;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
 p {
