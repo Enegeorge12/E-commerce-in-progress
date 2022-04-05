@@ -75,7 +75,7 @@
     </header>
       
     <main >
-        <section>
+      
             <div class="search">
                 <form action="#">
                   <input type="text" placeholder="Search.." name="search" class="fontSearch"/>
@@ -87,23 +87,56 @@
                   </button>
                 </form>
               </div>
-        </section>
    
       <div class="main">
           <div class="filter">
+            <div class="type_wine">
+              <section>Soiuri</section>
+              <label> <input type="checkbox" id="pinot Noir"  />Pinot Noir </label>
+              <label> <input type="checkbox" id="champagneS"  />Champagne </label>
+              <label> <input type="checkbox" id="chardonnay" />Chardonnay</label>
+              <label> <input type="checkbox" id="merlot" />Merlot</label>
+              <label> <input type="checkbox" id="cabernet" />Cabernet</label>
+              <label> <input type="checkbox" id="cabernet_sauvignon" />Cabernet Sauvignon</label>
+              <label> <input type="checkbox" id="sauvignon_blanc" />Sauvignon Blanc</label>
+              <label> <input type="checkbox" id="feteasca_neagra" />Feteasca Neagra</label>
+              <label> <input type="checkbox" id="feteasca_alba" />Feteasca Alba</label>
+              <label> <input type="checkbox" id="feteasca_alba" />Feteasca Alba</label>
+              <label>
+                <input type="checkbox" id="cupaj"/>Cupaj
+              </label>
+            </div>
             <div class="brand">
               <section>Producator</section>
               <label>
                 <input type="checkbox" name="davino" />Davino
               </label>
               <label>
-                <input type="checkbox"  name="davino" />Davino
+                <input type="checkbox"  name="davino" />Bauer
               </label>
               <label>
-                <input type="checkbox" name="davino" />Davino
+                <input type="checkbox" name="davino" />Tenuta
               </label>
               <label>
-                <input type="checkbox"  name="davino" />Davino
+                <input type="checkbox"  name="davino" />Egly Ouriet
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Dom Perignon
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Bilecart 
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Antinori
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Albert Bichot
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />1000 De Chipuri
+              </label>
+              <label>
+                <input type="checkbox"  name="davino" />Anima
               </label>
             </div>
             <div class="price_checkbox">
@@ -111,28 +144,31 @@
               <label> <input type="checkbox" name="price" />20-50 Lei </label>
               <label> <input type="checkbox" name="price" />50-100 Lei </label>
               <label> <input type="checkbox" name="price" />100-200 Lei </label>
+              <label> <input type="checkbox" name="price" />200-500 Lei </label>
+              <label> <input type="checkbox" name="price" />500-1000 Lei </label>
+              <label> <input type="checkbox" name="price" />1000-2000 Lei </label>
             </div>
-            <div class="type_wine">
-              <section>Soiuri</section>
+            <div class="type_wine1">
+              <section>Vinuri</section>
               <label>
-                <input type="checkbox" name="type_wine" />Vinuri Rose
+                <input type="checkbox" name="type_wine" id="Vinuri Rose" />Vinuri Rose
               </label>
               <label>
-                <input type="checkbox" name="type_wine" />Vinuri Rosii</label
+                <input type="checkbox" name="type_wine" id="Vinuri Rosii" />Vinuri Rosii</label
               >
               <label>
-                <input type="checkbox" name="type_wine" />Vinuri Albe
+                <input type="checkbox" name="type_wine" id="Vinuri Albe" />Vinuri Albe
               </label>
+              <label>
+                <input type="checkbox" name="type_wine" id="Champagne" />Champagne
+              </label>
+              
             </div>
+            
           </div>
+          
     
-          <!-- <div class="type_wine">
-              <section>Soiuri</section>
-              <label> <input type="checkbox" checked="type_wine" />Vinuri Rose </label>
-              <label> <input type="checkbox" checked="type_wine" />Vinuri Rosii</label>
-              <label> <input type="checkbox" checked="type_wine" />Vinuri Albe </label>
-            </div>
-          </div> -->
+          
           <div class="container">
             <div class="order">
               <h1>Rezultate</h1>
@@ -147,15 +183,14 @@
                   <option value="10">10</option>
                   <option value="15 ">15</option>
                   <option value="20">20</option>
+                  <option value="20">50</option>
                 </select>
               </div>
             </div>
 
             <div id="product"></div>
-    
 
-             
-          </div>
+          
         </div>
     </main>
     

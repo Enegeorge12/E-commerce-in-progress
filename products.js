@@ -5,8 +5,7 @@ const produse = [
     producator: "Albert Bichot",
     name: "ALBERT BICHOT SAINT – AUBIN",
     wine: "alb",
-    image:
-      "https://ethicwine.ro/wp-content/uploads/2020/10/DSC_0017-copy-300x453.jpg",
+    image: "./Vinuri/albert Bichot saint-aubin.jpg" ,
     price: "213 Lei",
     description:
       "Un vin deosebit de complex, intent şi cremos, cu o mineralitate delicată şi o bună aciditate.",
@@ -16,10 +15,10 @@ const produse = [
   },
   {
     producator: "Albert Bichot ",
-    name: "ALBERT BICHOT SECRET DE FAMILLE",
+    name: "ALBERT BICHOT-secret de famille pino noir",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/10/DSC_0042-copy-scaled.jpg",
+      "./Vinuri/ALBERT BICHOT-secret de famille pinot noir.jpg",
     price: "123 Lei",
     year: "2017",
     country: "Franta",
@@ -31,8 +30,7 @@ const produse = [
     producator: "DOM PERIGNON  ",
     name: "DOM PERIGNON- BRUT VINTAGE ",
     wine: "Champagne",
-    image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0028-2-scaled.jpg",
+    image:"./Vinuri/dom perignon brut vintage.jpg",
     price: "1.059,00 Lei",
     year: "2010",
     country: "Franta",
@@ -45,7 +43,7 @@ const produse = [
     name: "DOM PERIGNON - ROSE VINTAGE  ",
     wine: "Champagne",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2021/05/DSC_0009-copy-scaled.jpg",
+      "./Vinuri/DOM PERIGNON - ROSE VINTAGE.jpg",
     price: "1.660,00 Lei",
     year: "2006",
     country: "Franta",
@@ -58,7 +56,8 @@ const produse = [
     name: "EGLY OURIET - GRAND CRU MILLESIME ",
     wine: "Champagne",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/08/DSC_0032-scaled.jpg",
+      "./Vinuri/EGLY OURIET GRAND CRU MILLESIME 2006.jpg",
+      
     price: "750,00  Lei",
     year: "2006",
     country: "Franta",
@@ -71,7 +70,7 @@ const produse = [
     name: "EGLY OURIET - BLANC DE NOIRS GRAND CRU ",
     wine: "Champagne",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/08/DSC_0030-scaled.jpg",
+      "./Vinuri/EGLY OURIET - BLANC DE NOIRS GRAND CRU.jpg",
     price: "950,00  Lei",
     year: "2006",
     country: "Franta",
@@ -84,7 +83,7 @@ const produse = [
     name: "BILLECART-SALMON BRUT ",
     wine: "Champagne",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0031-2-scaled.jpg",
+      "./Vinuri/BILECART-SALMON BRUT.jpg",
     price: "280,00  Lei",
     year: "2006",
     country: "Franta",
@@ -97,7 +96,7 @@ const produse = [
     name: "BILLECART-SALMON ROSE ",
     wine: "Champagne",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0029-2-scaled.jpg",
+      "./Vinuri/BILECART-SALMON ROSE .jpg",
     price: "435,00  Lei",
     year: "2006",
     country: "Franta",
@@ -111,20 +110,20 @@ const produse = [
     name: "CERVARO DELLA SALA",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0007-scaled.jpg",
+      "Vinuri/ANTINORI cervaro della sala.jpg",
     price: "265 Lei",
     year: "2018",
     country: "Italia",
     description:
       "Cervaro della Sala a fost unul dintre primele vinuri italieneşti cu fermentație malolactică și maturare în baricuri, cu prima recoltă în 1985. În prezent, după o perioadă de 5 luni de maturare în baric, vinul obţinut din Chardonnay este asamblat cu cel din soiul Grechetto, care a fost produs fără influenţa lemnului. După o perioadă de învechire la sticlă, vinul este scos apoi în piaţă. Acest vin prezintă o culoare galben pai strălucitor, cu reflexii verzui. În nas se simt note discrete de pâine prăjită, completate de arome de citrice, fructe tropicale şi unt. Gustul este savuros, plin şi proaspăt, cu note de muşeţel, fructe albe şi tuşe minerale, susţinute de o aciditate plăcută şi un postgust lung.",
-    variety: "Chardonnay, Grechetto"
+    variety: "Chardonnay"
   },
   {
     producator: "ANTINORI",
     name: "ANTINORI CONT’UGO",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/05/DSC_0059-scaled.jpg",
+      "Vinuri/ANTINORI CONT’UGO.jpg",
     price: "175 Lei",
     year: "2013",
     country: "Italia",
@@ -137,7 +136,7 @@ const produse = [
     name: "ANTINORI-SOLAIA",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/05/DSC_0011-3-scaled.jpg",
+      "Vinuri/antinori-solaia.jpg",
     price: "2.100,00 Lei",
     year: "2013",
     country: "Italia",
@@ -150,7 +149,7 @@ const produse = [
     name: "ANTINORI-TIGNANELLO",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0058-scaled.jpg",
+      "Vinuri/antinori-Tignanello.jpg",
     price: "485 Lei",
     year: "2013",
     country: "Italia",
@@ -163,7 +162,7 @@ const produse = [
     name: "ANTINORI - CONTE DELLA VIPERA ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/ANTINORI-CONTE-DELLA-VIPERA.jpg",
+      "Vinuri/ANTINORI-CONTE-DELLA-VIPERA.jpg",
     price: "115 Lei",
     year: "2019",
     country: "Italia",
@@ -176,7 +175,7 @@ const produse = [
     name: "ANTINORI GUADO AL TASSO BOLGHERI SUPERIORE ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2021/03/DSC_0033-copy-scaled.jpg",
+      "Vinuri/ANTINORI GUADO AL TASSO bolgheri superiore.jpg",
     price: "600 Lei",
     year: "2017",
     country: "Italia",
@@ -189,7 +188,7 @@ const produse = [
     name: "GAJA - CAMARCANDA",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0006-scaled.jpg",
+      "Vinuri/GAJA CAMARCADA 700LEI.jpg",
     price: "700 Lei",
     year: "2007",
     country: "Italia",
@@ -202,7 +201,7 @@ const produse = [
     name: "GAJA - CAMARCANDA PROMIS",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0089-copy-scaled.jpg",
+      "Vinuri/GAJA CAMARCADA PROMIS 165LEI.jpg",
     price: "165 Lei",
     year: "2014",
     country: "Italia",
@@ -215,7 +214,7 @@ const produse = [
     name: "GAJA - PIEVE SANTA RESTITUTA",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0083-copy-scaled.jpg",
+      "Vinuri/GAJA PIEVE SANTA RESTITUTA  BRUNELLO DI MONTALCINO 365 LEI.jpg",
     price: "365 Lei",
     year: "2014",
     country: "Italia",
@@ -228,7 +227,7 @@ const produse = [
     name: "TENUTA ARGENTIERA - BOLGHERI SUPERIORE",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0099-copy-scaled.jpg",
+      "Vinuri/TENUTA ARGENTIERA BOLGHERI SUPERIORE 460LEI.jpg",
     price: "460 Lei",
     year: "2016",
     country: "Italia",
@@ -241,7 +240,7 @@ const produse = [
     name: "TENUTA BUON TEMPO BRUNELLO DI MONTALCINO",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/11/DSC_0095-copy-scaled.jpg",
+      "Vinuri/TENUTA BOUN TEMPO BRUNELLO DI MONTALCINO 214LEI.jpg",
     price: "214 Lei",
     year: "2010",
     country: "Italia",
@@ -254,7 +253,7 @@ const produse = [
     name: "TENUTA `ALTA` ",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/11/DSC_0096-copy-scaled.jpg",
+      "Vinuri/TENUTA BOUN TEMPO BRUNELLO DI MONTALCINO 'ALTA 260LEI.jpg",
     price: "260 Lei",
     year: "2010",
     country: "Italia",
@@ -267,7 +266,7 @@ const produse = [
     name: "TENUTA DI TRINORO LE CUPOLE",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/10/DSC_0037-copy-scaled.jpg",
+      "Vinuri/TENUTA DI TRINORO LE CUPOLE 180LEI.jpg",
     price: "180 Lei",
     year: "2014",
     country: "Italia",
@@ -280,7 +279,7 @@ const produse = [
     name: "TENUTA  DI TRINORO PALAZZI",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0023-scaled.jpg",
+      "Vinuri/TENUTA DI TRINORO PALAZZI 940LEI.jpg",
     price: "940 Lei",
     year: "2015",
     country: "Italia",
@@ -294,7 +293,7 @@ const produse = [
     name: "DOMAINE CEPTURA ROUGE MAGNUM   ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/10/DSC_0060-copy-scaled.jpg",
+      "Vinuri/DAVINO DOMANIE CEPTURA ROUGE MAGNUM.jpg",
     price: "295 Lei",
     year: "2015",
     country: "Romania",
@@ -302,25 +301,13 @@ const produse = [
       "Davino Domaine Ceptura Rouge, un cupaj valoros obţinut din Cabernet Sauvignon, Merlot şi Fetească Neagră, în format Magnum (1,5 litri). Este produs din cele mai valoroase parcele, cele trei soiuri care intră în cupaj sunt vinificate separat, iar vinul obţinut este intens și complex, cu fond de vișine negre și prune uscate, ușor picant, nuanțe de lemn de stejar și cafea. Gustul este complex și expresiv, amplu, puternic dar catifelat, cu un postgust remanent condimentat, ce pune în evidență taninurile fine și elaborate. ",
     variety: "Cupaj"
   },
-  {
-    producator: "DAVINO",
-    name: "DOMAINE CEPTURA ROUGE MAGNUM   ",
-    wine: "rosu",
-    image:
-      "https://ethicwine.ro/wp-content/uploads/2021/03/DSC_0033-copy-scaled.jpg",
-    price: "295 Lei",
-    year: "2015",
-    country: "Romania",
-    description:
-      "Davino Domaine Ceptura Rouge, un cupaj valoros obţinut din Cabernet Sauvignon, Merlot şi Fetească Neagră, în format Magnum (1,5 litri). Este produs din cele mai valoroase parcele, cele trei soiuri care intră în cupaj sunt vinificate separat, iar vinul obţinut este intens și complex, cu fond de vișine negre și prune uscate, ușor picant, nuanțe de lemn de stejar și cafea. Gustul este complex și expresiv, amplu, puternic dar catifelat, cu un postgust remanent condimentat, ce pune în evidență taninurile fine și elaborate. ",
-    variety: "Cupaj"
-  },
+  
   {
     producator: "DAVINO",
     name: "PURPURA VALAHICA DAVINO FETEASCĂ NEAGRĂ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/06/DSC_0036-scaled.jpg",
+      "Vinuri/DAVINO PURPURA VALAHICA 2009.jpg",
     price: "160 Lei",
     year: "2009 ",
     country: "Romania",
@@ -333,7 +320,7 @@ const produse = [
     name: "DAVINO - FLAMBOYANT MAGNUM 1,5 L  ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/04/DSC_0065-copy-scaled.jpg",
+      "Vinuri/DAVINO FLAMBOYANT MAGNUM 1,5 L.jpg",
     price: "475 Lei",
     year: "2015 ",
     country: "Romania",
@@ -346,7 +333,7 @@ const produse = [
     name: "DAVINO - MONOGRAM FETEASCĂ NEAGRĂ ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0006-scaled.jpg",
+      "Vinuri/DAVINO MONOGRAM FETEASCA NEAGRA.jpg",
     price: "95 Lei",
     year: "2015 ",
     country: "Romania",
@@ -359,7 +346,7 @@ const produse = [
     name: "DAVINO - MONOGRAM FETEASCĂ ALBĂ ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0003-copy-scaled.jpg",
+      "Vinuri/DAVINO MONOGRAM FETEASCA ALBA.jpg",
     price: "79Lei",
     year: "2019",
     country: "Romania",
@@ -372,7 +359,7 @@ const produse = [
     name: "DAVINO - IACOB ROSE  ",
     wine: "rose",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0029-scaled.jpg",
+      "Vinuri/DAVINO -IACOB ROSE 2020.jpg",
     price: "48 Lei",
     year: "2020",
     country: "Romania",
@@ -385,7 +372,7 @@ const produse = [
     name: "DAVINO - IACOB ROŞU   ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0027-scaled.jpg",
+      "Vinuri/DAVINO-IACOB ROSU 2017.jpg",
     price: "72 Lei",
     year: "2017",
     country: "Romania",
@@ -398,7 +385,7 @@ const produse = [
     name: "DAVINO - IACOB ALB    ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0028-scaled.jpg",
+      "Vinuri/DAVINO - IACOB ALB.jpg",
     price: "66Lei",
     year: "2020",
     country: "Romania",
@@ -411,7 +398,7 @@ const produse = [
     name: "DAVINO - FAURAR ALB    ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0026-scaled.jpg",
+      "Vinuri/DAVINO-FAURAR ALB.jpg",
     price: "42 Lei",
     year: "2020",
     country: "Romania",
@@ -424,7 +411,7 @@ const produse = [
     name: "DAVINO - FAURAR ROSU  ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0025-scaled.jpg",
+      "Vinuri/DAVINO-FAURAR ROSU 2017 42LEI.jpg",
     price: "42 Lei",
     year: "2017",
     country: "Romania",
@@ -437,7 +424,7 @@ const produse = [
     name: "ANIMA - 3 FETE NEGRE MAGNUM ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/09/DSC_0014-1-scaled.jpg",
+      "Vinuri/ANIMA-3 FETE NEGRE MAGNUM 280LEI.jpg",
     price: "280 Lei",
     year: "2014",
     country: "Romania",
@@ -450,7 +437,7 @@ const produse = [
     name: "ANIMA - GRAND RESERVE ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/04/DSC_0014-1-scaled.jpg",
+      "Vinuri/ANIMA - GRAND RESERVE.jpg",
     price: "150 Lei",
     year: "2016",
     country: "Romania",
@@ -463,7 +450,7 @@ const produse = [
     name: "ANIMA - SAUVIGNON BLANC FUME    ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0020-scaled.jpg",
+      "Vinuri/ANIMA-SAUVION BLACK FUME 77LEI.jpg",
     price: "77 Lei",
     year: "2017",
     country: "Romania",
@@ -476,20 +463,20 @@ const produse = [
     name: "ANIMA -  CHARDONNAY   ",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0020-scaled.jpg",
+      "Vinuri/ANIMA- CHARDONNAY 70LEI.jpg",
     price: "70 Lei",
     year: "2020",
     country: "Romania",
     description:
       "Anima Chardonnay 2020, vin alb sec produs de Aurelia Vișinescu, este intens, cremos, cu arome de fructe tropicale, pepene galben și pere coapte. Fermentat și maturat pe drojdie timp de 5 luni în barricuri din stejar franțuzesc; arome de fructe tropicale, ananas și babană, bine integrte cu notele lemnoase și vanilate. Corpolent și cremos, mineral, cu gust de nuci și brioșe, cu un bun potențial de învechire. Buchet atrăgător, postgust lung.",
-    variety: "  chardonnay"
+    variety: "chardonnay"
   },
   {
     producator: "ANIMA",
     name: "ANIMA -   MERLOT   ",
     wine: "ROSU",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0015-scaled.jpg",
+      "Vinuri/ANIMA-MERLOT 83LEI.jpg",
     price: "83 Lei",
     year: "2020",
     country: "Romania",
@@ -502,7 +489,7 @@ const produse = [
     name: "1000 DE CHIPURI - Cabernet Sauvignon & Cabernet Franc ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0003-scaled.jpg",
+      "Vinuri/1000 DE CHIPURI CABERNET SAUVIGNON & CABERNET FRANC 60LEI.jpg",
     price: "60 Lei",
     year: "2017",
     country: "Romania",
@@ -515,7 +502,7 @@ const produse = [
     name: "1000 DE CHIPURI - CUPAJ ALB",
     wine: "alb",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/05/DSC_0004-scaled.jpg",
+      "Vinuri/1000 DE CHIPURI-CUPAJ ALB 45LEI.jpg",
     price: "45 Lei",
     year: "2018",
     country: "Romania",
@@ -528,7 +515,7 @@ const produse = [
     name: "1000 DE CHIPURI - FETEASCA NEAGRA ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/04/DSC_0003-scaled.jpg",
+      "Vinuri/1000 DE CHIPURI-FETEASCA NEAGRA 150LEI.jpg",
     price: "150 Lei",
     year: "2017",
     country: "Romania",
@@ -540,7 +527,7 @@ const produse = [
     name: "1000 DE CHIPURI- DISTINCTIS  CUPAJ ROŞU  ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0004-1-scaled.jpg",
+      "Vinuri/1000 DE CHIPURI-DISTINCTIS CUPAJ ROSU 125LEI. jpg.jpg",
     price: "125 Lei",
     year: "2014",
     country: "Romania",
@@ -552,7 +539,7 @@ const produse = [
     name: "1000 DE CHIPURI-  FN14 FETEASCĂ NEAGRĂ  ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2018/12/DSC_0022-scaled.jpg",
+      "Vinuri/1000 DE CHIPURI FN14 - FETEASCA NEAGRA 250LEI.jpg",
     price: "250 Lei",
     year: "2014",
     country: "Romania",
@@ -562,7 +549,7 @@ const produse = [
   },
   {
     producator: "BAUER ",
-    name: "BAUER -CABERNET FRANC  ",
+    name: "Vinuri/BAUER CABERNET FRANC 2019 97LEI.jpg  ",
     wine: "rosu",
     image:
       "https://ethicwine.ro/wp-content/uploads/2020/06/DSC_0002-scaled.jpg",
@@ -578,7 +565,7 @@ const produse = [
     name: "BAUER - CABERNET SAUVIGNON   ",
     wine: "rosu",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0024-1-scaled.jpg",
+      "Vinuri/BAUER CABERNET SAUVIGNON 2018 85LEI.jpg",
     price: "85 Lei",
     year: "2018",
     country: "Romania",
@@ -591,7 +578,7 @@ const produse = [
     name: "BAUER - FETEASCA NEAGRA   ",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2020/05/DSC_0027-scaled.jpg",
+      "Vinuri/BAUER FETEASCA NEAGRA 2018 107LEI.jpg",
     price: "107 Lei",
     year: "2018",
     country: "Romania",
@@ -604,7 +591,7 @@ const produse = [
     name: "BAUER - MERLOT 3L   ",
     wine: "rosu ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0023-5-scaled.jpg",
+      "Vinuri/BAUER MERLOT 3 L 2013 580LEI.jpg",
     price: "580 Lei",
     year: "2013",
     country: "Romania",
@@ -617,7 +604,7 @@ const produse = [
     name: "BAUER - BAUER SAUVIGNON BLANC 2021",
     wine: "alb ",
     image:
-      "https://ethicwine.ro/wp-content/uploads/2016/01/DSC_0030-1-scaled.jpg",
+      "Vinuri/BAUER SAUBIGNON BLANC 2021 58LEI.jpg",
     price: "58 Lei",
     year: "2021",
     country: "Romania",

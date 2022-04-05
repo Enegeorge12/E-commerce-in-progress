@@ -171,7 +171,7 @@ main {
 }
 
 .order {
-  border: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
   padding: 10px;
   margin: 10px;
   /* width: 100%; */
@@ -186,24 +186,6 @@ select {
   margin: 10px 0px;
 }
 
-.product {
-  /* width: 100%; */
-  height: auto;
-  /* border: 1px solid black; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 5px;
-  gap: 25px;
-  margin: 5px;
-}
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,7 +195,6 @@ select {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  border: 1px solid gainsboro;
 }
 
 .filter {
@@ -226,10 +207,8 @@ select {
           flex-direction: column;
   gap: 30px;
   width: 20%;
-  /* border: 1px solid red; */
   padding: 10px;
   margin: 10px;
-  /* margin-top: 10px; */
 }
 
 .brand {
@@ -240,7 +219,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* border: 1px solid black; */
+  gap: 10px;
 }
 
 .price_checkbox {
@@ -251,7 +230,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* border: 1px solid black; */
+  gap: 10px;
 }
 
 .type_wine {
@@ -262,7 +241,18 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* border: 1px solid black; */
+  gap: 10px;
+}
+
+.type_wine1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 
 .vinuri {
@@ -279,9 +269,7 @@ select {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border: 1px solid gainsboro;
   padding: 0px;
-  background-color: gainsboro;
 }
 
 .li-vinuri {
@@ -304,7 +292,7 @@ select {
   -webkit-box-shadow: 2px 2px 2px 2px grey;
           box-shadow: 2px 2px 2px 2px grey;
   border-radius: 20px;
-  width: 10%;
+  width: 20%;
   text-align: center;
   gap: 10px;
   padding: 20px;
@@ -338,7 +326,6 @@ p {
 }
 
 section {
-  /* background-color: rgb(87, 30, 26); */
   border-bottom: 1px solid gainsboro;
   padding: 2px;
 }

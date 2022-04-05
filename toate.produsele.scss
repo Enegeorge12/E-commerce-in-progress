@@ -134,7 +134,7 @@
     width: 100%;
   }
   .order {
-    border: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
     padding: 10px;
     margin: 10px;
     /* width: 100%; */
@@ -148,47 +148,45 @@
     margin: 10px 0px;
   }
 
-  .product {
-    /* width: 100%; */
-    height: auto;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5px;
-    gap: 25px;
-    margin: 5px;
-  }
+  
   .main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid gainsboro;
+    // border: 1px solid gainsboro;
   }
   .filter {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 20%;
-    /* border: 1px solid red; */
+    
     padding: 10px;
     margin: 10px;
-    /* margin-top: 10px; */
+    
   }
   .brand {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    gap: 10px;
+    
   }
   .price_checkbox {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    gap: 10px;
+
   }
   .type_wine {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    gap: 10px;
+  
+  }
+  .type_wine1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   // .card {
   //   width: 150px;
@@ -250,10 +248,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid gainsboro;
+    // border: 1px solid gainsboro;
     padding: 0px;
   
-    background-color: gainsboro;
+    // background-color: gainsboro;
   }
   .li-vinuri{
     background-color: white;
@@ -265,7 +263,7 @@
     border: 1px solid gainsboro;
     box-shadow: 2px 2px 2px 2px grey;
     border-radius: 20px;
-    width: 10%;
+    width: 20%;
     text-align: center;
     gap: 10px;
     padding: 20px;
@@ -300,9 +298,9 @@
   }
 
   section {
-    /* background-color: rgb(87, 30, 26); */
     border-bottom: 1px solid gainsboro;
     padding: 2px;
+    
   }
   .checkbox {
     display: flex;
