@@ -299,17 +299,16 @@ select {
   list-style: none;
 }
 
-.price-button {
+.p-price {
   padding: 10px;
   width: 100%;
   background-color: #571e1a;
   border-radius: 20px;
   color: white;
-  cursor: pointer;
   border: none;
 }
 
-.details-button {
+.a-details {
   padding: 10px;
   width: 100%;
   background-color: #571e1a;

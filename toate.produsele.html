@@ -77,15 +77,15 @@
     <main >
       
             <div class="search">
-                <form action="#">
-                  <input type="text" placeholder="Search.." name="search" class="fontSearch"/>
+                
+                  <input type="text" placeholder="Cauta: Soiuri, Poducator " name="search" id="filter_product"/>
                   <button type="submit">
                     <img
                       width="10px"
                       src="https://img.icons8.com/ios-filled/344/search--v1.png"
                     />
                   </button>
-                </form>
+              
               </div>
    
       <div class="main">
@@ -173,10 +173,11 @@
             <div class="order">
               <h1>Rezultate</h1>
               <div class="filtru">
-                <label for="Filtreaza"> Filtreaza</label>
-                <select>
-                  <option value="Pret.crescator">Pret crescator</option>
-                  <option value="Pret.descrescator">Pret descrescator</option>
+                <label for="sorting"> Filtreaza</label>
+                <select name="sort" id="sorting">
+                  <option value="">None</option>
+                  <option value="asc">Pret crescator</option>
+                  <option value="desc">Pret descrescator</option>
                 </select>
                 <label for="Rezultate"> Rezultate </label>
                 <select>
