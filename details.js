@@ -13,7 +13,7 @@ let produse = [
       variety: "Chardonnay"
     },
     {id:2,
-      producator: "Albert Bichot ",
+      producator: "Albert Bichot",
       name: "ALBERT BICHOT-secret de famille pino noir",
       wine: "rosu",
       image:
@@ -26,9 +26,9 @@ let produse = [
       variety: "Pinot Noir"
     },
     {id:3,
-      producator: "DOM PERIGNON  ",
+      producator: "Dom Perignon",
       name: "DOM PERIGNON- BRUT VINTAGE ",
-      wine: "Champagne",
+      wine: "champagne",
       image:"./Vinuri/dom perignon brut vintage.jpg",
       price: "1.059,00 Lei",
       year: "2010",
@@ -38,9 +38,9 @@ let produse = [
       variety: "Champagne"
     },
     {id:4,
-      producator: "DOM PERIGNON  ",
+      producator: "Dom Perignon",
       name: "DOM PERIGNON - ROSE VINTAGE  ",
-      wine: "Champagne",
+      wine: "champagne",
       image:
         "./Vinuri/DOM PERIGNON - ROSE VINTAGE.jpg",
       price: "1.660,00 Lei",
@@ -51,9 +51,9 @@ let produse = [
       variety: "Champagne"
     },
     {id:5,
-      producator: "EGLY OURIET",
+      producator: "Egly Ouriet",
       name: "EGLY OURIET - GRAND CRU MILLESIME ",
-      wine: "Champagne",
+      wine: "champagne",
       image:
         "./Vinuri/EGLY OURIET GRAND CRU MILLESIME 2006.jpg",
         
@@ -65,9 +65,9 @@ let produse = [
       variety: "Champagne"
     },
     {id:6,
-      producator: "EGLY OURIET",
+      producator: "Egly Ouriet",
       name: "EGLY OURIET - BLANC DE NOIRS GRAND CRU ",
-      wine: "Champagne",
+      wine: "champagne",
       image:
         "./Vinuri/EGLY OURIET - BLANC DE NOIRS GRAND CRU.jpg",
       price: "950,00  Lei",
@@ -78,9 +78,9 @@ let produse = [
       variety: "Champagne"
     },
     {id:7,
-      producator: "BILLECART",
+      producator: "Bilecart",
       name: "BILLECART-SALMON BRUT ",
-      wine: "Champagne",
+      wine: "champagne",
       image:
         "./Vinuri/BILECART-SALMON BRUT.jpg",
       price: "280,00  Lei",
@@ -91,9 +91,9 @@ let produse = [
       variety: "Champagne"
     },
     {id:8,
-      producator: "BILLECART",
+      producator: "Bilecart",
       name: "BILLECART-SALMON ROSE ",
-      wine: "Champagne",
+      wine: "champagne",
       image:
         "./Vinuri/BILECART-SALMON ROSE .jpg",
       price: "435,00  Lei",
@@ -105,7 +105,7 @@ let produse = [
     },
     // Italia
     {id:9,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "CERVARO DELLA SALA",
       wine: "alb",
       image:
@@ -118,7 +118,7 @@ let produse = [
       variety: "Chardonnay"
     },
     {id:10,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "ANTINORI CONT’UGO",
       wine: "rosu",
       image:
@@ -131,7 +131,7 @@ let produse = [
       variety: "Merlot"
     },
     {id:11,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "ANTINORI-SOLAIA",
       wine: "rosu",
       image:
@@ -144,7 +144,7 @@ let produse = [
       variety: "Merlot"
     },
     {id:12,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "ANTINORI-TIGNANELLO",
       wine: "rosu",
       image:
@@ -157,7 +157,7 @@ let produse = [
       variety: "Cupaj"
     },
     {id:13,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "ANTINORI - CONTE DELLA VIPERA ",
       wine: "alb",
       image:
@@ -170,7 +170,7 @@ let produse = [
       variety: "Cupaj"
     },
     {id:14,
-      producator: "ANTINORI",
+      producator: "Antinori",
       name: "ANTINORI GUADO AL TASSO BOLGHERI SUPERIORE ",
       wine: "rosu",
       image:
@@ -193,7 +193,7 @@ let produse = [
       country: "Italia",
       description:
         "Roşu rubiniu închis. Complex şi bine definit, bogat în arome de condiment. Un vin cu o structură solidă şi complexă, concentrat în arome, dar fin şi armonios pe palat.    ",
-      variety: "sauvignon blanc  "
+      variety: "Sauvignon Blanc"
     },
     {id:16,
       producator: "GAJA ",
@@ -235,7 +235,7 @@ let produse = [
       variety: "cupaj  "
     },
     {id:19,
-      producator: "TENUTA  ",
+      producator: "Tenuta",
       name: "TENUTA BUON TEMPO BRUNELLO DI MONTALCINO",
       wine: "rosu ",
       image:
@@ -248,7 +248,7 @@ let produse = [
       variety: "cupaj  "
     },
     {id:20,
-      producator: "TENUTA  ",
+      producator: "Tenuta",
       name: "TENUTA `ALTA` ",
       wine: "rosu ",
       image:
@@ -261,7 +261,7 @@ let produse = [
       variety: "cupaj  "
     },
     {id:21,
-      producator: "TENUTA  ",
+      producator: "Tenuta",
       name: "TENUTA DI TRINORO LE CUPOLE",
       wine: "rosu ",
       image:
@@ -274,7 +274,7 @@ let produse = [
       variety: "cupaj  "
     },
     {id:22,
-      producator: "TENUTA  ",
+      producator: "Tenuta",
       name: "TENUTA  DI TRINORO PALAZZI",
       wine: "rosu ",
       image:
@@ -284,11 +284,11 @@ let produse = [
       country: "Italia",
       description:
         "Vinul prezintă arome de fructe roşii coapte, flori sălbatice, trufe albe şi condimente exotice. Gustativ este corpolent, devine intens pe parcurs, cu note de gem de zmeură şi flori ce persistă în timp pe un final lung susţinut de taninuri mătăsoase.",
-      variety: "merlot "
+      variety: "Merlot"
     },
     // romania
     {id:23,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DOMAINE CEPTURA ROUGE MAGNUM   ",
       wine: "rosu",
       image:
@@ -302,7 +302,7 @@ let produse = [
     },
     
     {id:24,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "PURPURA VALAHICA DAVINO FETEASCĂ NEAGRĂ",
       wine: "rosu",
       image:
@@ -315,7 +315,7 @@ let produse = [
       variety: "Feteasca Neagra"
     },
     {id:25,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - FLAMBOYANT MAGNUM 1,5 L  ",
       wine: "rosu",
       image:
@@ -328,7 +328,7 @@ let produse = [
       variety: "Cupaj"
     },
     {id:26,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - MONOGRAM FETEASCĂ NEAGRĂ ",
       wine: "rosu",
       image:
@@ -338,10 +338,10 @@ let produse = [
       country: "Romania",
       description:
         " Monogram Fetească Neagră este un vin roşu rubiniu intens cu reflexe purpurii, în care predomină aromele condimentate de mentă şi prune uscate, intense şi persistente, completate cu nuanţe de lemn de stejar. Gustul este expresiv, suplu, bine structurat, rotund cu taninuri bine integrate. Asociere culinară: carne de raţă, cotlete de porc, paste pe bază de sos de tomate, carne de viţel, brânzeturi.",
-      variety: "Feteasca neagra "
+      variety: "Feteasca Neagra"
     },
     {id:27,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - MONOGRAM FETEASCĂ ALBĂ ",
       wine: "alb",
       image:
@@ -351,10 +351,10 @@ let produse = [
       country: "Romania",
       description:
         "Monogram Fetească Albă este un vin bine structurat, amplu, cu arome complexe date de maturarea pe depozit fin de drojdii, dar și cu păstrarea aromelor tipice de soi. Nas fin, cu nuanţe de flori de tei şi note minerale pe un fond de alune uşor prăjite. În gust este crocant şi cremos, bine echilibrat şi expresiv, cu un postgust remanent uşor amărui. Poate fi consumat ca aperitiv sau alături de peşte, fructe de mare, preparate din carne de pui.",
-      variety: "Feteasca alba "
+      variety: "Feteasca Alba"
     },
     {id:28,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - IACOB ROSE  ",
       wine: "rose",
       image:
@@ -364,10 +364,10 @@ let produse = [
       country: "Romania",
       description:
         "Iacob Rose, cupaj obţinut din Cabernet Sauvignon şi Merlot, în care predomină aromele de fructe roşii de pădure, vişine şi coacăze negre. Proaspăt, echilibrat, bine structurat, amplu, rotund şi persistent, este excelent ca aperitiv sau alături de peşte, fructe de mare, brânzeturi proaspete.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:29,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - IACOB ROŞU   ",
       wine: "rosu",
       image:
@@ -377,10 +377,10 @@ let produse = [
       country: "Romania",
       description:
         "Iacob Roşu, cupaj obţinut din Cabernet Sauvignon şi Fetească Neagră, este un vin roșu-rubiniu intens cu reflexe purpurii, în care se identifică aromele caracteristice soiurilor, la care se adaugă note de fructe confiate, lemn de stejar și cafea. Gustul este amplu și ferm, echilibrat și armonios cu final persistent. Asociere culinară: paste, pizza, carne de miel, carne de vită împănată, brânzeturi.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:30,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - IACOB ALB    ",
       wine: "alb",
       image:
@@ -390,10 +390,10 @@ let produse = [
       country: "Romania",
       description:
         "Iacob Alb, cupaj obţinut din Sauvignon Blanc şi Fetească Albă, este limpede, cristalin, auriu cu nuanţe verzui; un vin în care se regăsesc cu uşurinţă aromele primare varietale tipice fiecarui soi în parte, completate de note fermentative elegante și elaborate. Proaspăt, expresiv, amplu, echilibrat și persistent, poate fi savurat ca aperitiv, sau alături de pește, fructe de mare, carne de pui.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:31,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - FAURAR ALB    ",
       wine: "alb",
       image:
@@ -403,10 +403,10 @@ let produse = [
       country: "Romania",
       description:
         "Făurar alb, cupaj obţinut din Sauvignon Blanc, Fetească Albă şi Riesling, este un vin proaspăt şi expresiv, în care se regăsesc arome florale cu note ușor minerale, intens şi persistent. Poate fi consumat ca aperitiv sau alături de pește, fructe de mare, carne de pui.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:32,
-      producator: "DAVINO",
+      producator: "Davino",
       name: "DAVINO - FAURAR ROSU  ",
       wine: "rosu",
       image:
@@ -416,10 +416,10 @@ let produse = [
       country: "Romania",
       description:
         "Făurar Roşu, cupaj obţinut din Cabernet Sauvignon, Merlot şi Fetească Neagră, este un vin roșu rubiniu intens cu reflexe purpurii. Nasul este caracteristic soiurilor din care este obţinut, intens și persistent, condimentat cu note de piper verde, fructe uscate și cafea. În gust este amplu, echilibrat și armonios structurat, final persistent, cu taninuri elaborate. Asociere culinară: carne de porc, vită sau miel, paste, pizza, brânzeturi.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:33,
-      producator: "ANIMA",
+     producator: "Anima",
       name: "ANIMA - 3 FETE NEGRE MAGNUM ",
       wine: "rosu",
       image:
@@ -429,10 +429,10 @@ let produse = [
       country: "Romania",
       description:
         "Anima 3 Fete Negre Magnum, asamblaj de Fetească Neagră din trei ani diferiţi, seria 006 îmbină recoltele anilor 2014, 2015 şi 2016. Vinul este elegant, armonios şi surprinzător, cu arome intense de fructe negre bine coapte, ciocolată amăruie şi tuşe de vanilie provenite de la maturarea în baricuri de stejar.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:34,
-      producator: "ANIMA",
+     producator: "Anima",
       name: "ANIMA - GRAND RESERVE ",
       wine: "rosu",
       image:
@@ -442,10 +442,10 @@ let produse = [
       country: "Romania",
       description:
         "Anima Grand Reserve, cupaj roșu sec obținut din soiurile Fetească Neagră, Cabernet Sauvignon, Syrah și Merlot, prin selecţia celor mai bune butoaie, creat sub semnătura oenologului Aurelia Vișinescu. Fiecare dintre cele patru soiuri îşi aduce nota “personală”, mai pregnantă sau mai subtilă, cu scopul de a obţine un vin armonios, elegant şi complex. Debutul este intens și vibrant, cu arome bogate de fructe negre și roșii, cireșe bine coapte, prune uscate și stafide, note subtile de lemn și condiment. Structură solidă și taninuri fine, cu postgust lung și persistent, în note delicate de vanilie, tabac și ciocolată neagră.",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:35,
-      producator: "ANIMA",
+     producator: "Anima",
       name: "ANIMA - SAUVIGNON BLANC FUME    ",
       wine: "alb",
       image:
@@ -458,7 +458,7 @@ let produse = [
       variety: "Sauvignon Blanc"
     },
     {id:36,
-      producator: "ANIMA",
+     producator: "Anima",
       name: "ANIMA -  CHARDONNAY   ",
       wine: "alb",
       image:
@@ -468,10 +468,10 @@ let produse = [
       country: "Romania",
       description:
         "Anima Chardonnay 2020, vin alb sec produs de Aurelia Vișinescu, este intens, cremos, cu arome de fructe tropicale, pepene galben și pere coapte. Fermentat și maturat pe drojdie timp de 5 luni în barricuri din stejar franțuzesc; arome de fructe tropicale, ananas și babană, bine integrte cu notele lemnoase și vanilate. Corpolent și cremos, mineral, cu gust de nuci și brioșe, cu un bun potențial de învechire. Buchet atrăgător, postgust lung.",
-      variety: "chardonnay"
+      variety: "Chardonnay"
     },
     {id:37,
-      producator: "ANIMA",
+     producator: "Anima",
       name: "ANIMA -   MERLOT   ",
       wine: "ROSU",
       image:
@@ -481,10 +481,10 @@ let produse = [
       country: "Romania",
       description:
         "Merlot-ul din gama Anima, produs sub semnătura oenologului Aurelia Vișinescu, este intens, moale și catifelat, bogat, cu miros de fructe negre bine coapte, echilibrat de aromele de vanilie provenite ca urmare a învechirii în butoaie din stejar românesc timp de 20 de luni. Pentru a păstra aromele delicate, intervenția tehnologică a fost redusă la minim, de aceea este normal ca vinul să prezinte ușoare depuneri.",
-      variety: "merlot"
+      variety: "Merlot"
     },
     {id:38,
-      producator: "1000 DE CHIPURI ",
+      producator: "1000 De Chipuri",
       name: "1000 DE CHIPURI - Cabernet Sauvignon & Cabernet Franc ",
       wine: "rosu",
       image:
@@ -494,10 +494,10 @@ let produse = [
       country: "Romania",
       description:
         "1000 De Chipuri Cabernet Sauvignon și Cabernet Franc, vin roșu sec, obținut din struguri de Cabernet Sauvinon și Cabernet Franc, din recolta anului 2017. Maturat în butoaie de stejar 12 luni.    ",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:39,
-      producator: "1000 DE CHIPURI ",
+      producator: "1000 De Chipuri",
       name: "1000 DE CHIPURI - CUPAJ ALB",
       wine: "alb",
       image:
@@ -507,10 +507,10 @@ let produse = [
       country: "Romania",
       description:
         "1000 De Chipuri Cabernet Sauvignon și Cabernet Franc, vin roșu sec, obținut din struguri de Cabernet Sauvinon și Cabernet Franc, din recolta anului 2017. Maturat în butoaie de stejar 12 luni.    ",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:40,
-      producator: "1000 DE CHIPURI ",
+      producator: "1000 De Chipuri",
       name: "1000 DE CHIPURI - FETEASCA NEAGRA ",
       wine: "rosu",
       image:
@@ -519,10 +519,10 @@ let produse = [
       year: "2017",
       country: "Romania",
       description: "1000 DE CHIPURI - FETEASCA NEAGRA",
-      variety: "feteasca neagra"
+      variety: "Feteasca Neagra"
     },
     {id:41,
-      producator: "1000 DE CHIPURI ",
+      producator: "1000 De Chipuri",
       name: "1000 DE CHIPURI- DISTINCTIS  CUPAJ ROŞU  ",
       wine: "rosu",
       image:
@@ -531,10 +531,10 @@ let produse = [
       year: "2014",
       country: "Romania",
       description: "1000 DE CHIPURI - PINOT NOIR",
-      variety: "cupaj"
+      variety: "Cupaj"
     },
     {id:42,
-      producator: "1000 DE CHIPURI ",
+      producator: "1000 De Chipuri",
       name: "1000 DE CHIPURI-  FN14 FETEASCĂ NEAGRĂ  ",
       wine: "rosu",
       image:
@@ -544,10 +544,10 @@ let produse = [
       country: "Romania",
       description:
         "1000 Chipuri FN14, vin roșu sec, obținut din struguri de Fetească Neagră, din recolta anului 2014. Maturat în butoaie de stejar 24 luni și în sticlă 12 luni.",
-      variety: "feteasca neagra "
+      variety: "Feteasca Neagra"
     },
     {id:43,
-      producator: "BAUER ",
+      producator: "Bauer",
       name: "Bauer Cabernet Franc ",
       wine: "rosu",
       image:
@@ -557,10 +557,10 @@ let produse = [
       country: "Romania",
       description:
         "Bauer Cabernet Franc, vin roşu sec produs în ediţie limitată de 3800 sticle.",
-      variety: "cabernet "
+      variety: "Cabernet"
     },
     {id:44,
-      producator: "BAUER ",
+      producator: "Bauer",
       name: "BAUER - CABERNET SAUVIGNON   ",
       wine: "rosu",
       image:
@@ -570,10 +570,10 @@ let produse = [
       country: "Romania",
       description:
         "Bauer Cabernet Sauvignon 2017, produs în ediţie limitată de 4000 de sticle, este un vin elegant şi expresiv, cu o personalitate proprie şi potenţial excelent de învechire. Se recomandă asocierea cu mâncare condimentată, mai intensă în gust: miel, vânat sau roast beef.",
-      variety: "cabernet sauvignon"
+      variety: "Cabernet Sauvignon"
     },
     {id:45,
-      producator: "BAUER ",
+      producator: "Bauer",
       name: "BAUER - FETEASCA NEAGRA   ",
       wine: "rosu ",
       image:
@@ -583,10 +583,10 @@ let produse = [
       country: "Romania",
       description:
         "Bauer Cabernet Sauvignon 2017, produs în ediţie limitată de 4000 de sticle, este un vin elegant şi expresiv, cu o personalitate proprie şi potenţial excelent de învechire. Se recomandă asocierea cu mâncare condimentată, mai intensă în gust: miel, vânat sau roast beef.",
-      variety: "feteasca neagra "
+      variety: "Feteasca Neagra"
     },
     {id:46,
-      producator: "BAUER ",
+      producator: "Bauer",
       name: "BAUER - MERLOT 3L   ",
       wine: "rosu ",
       image:
@@ -596,10 +596,10 @@ let produse = [
       country: "Romania",
       description:
         "După desciorchinare, strugurii nu sunt zdrobiţi şi nu se adaugă drojdii selecţionate. Fermentaţia alcoolică are loc în cisterne mici de inox, fără temperatură controlată, “pigeage” fiind făcut manual până la 3 ori pe zi. Vinurile rămân până la 5 săptămâni pe boştină, înainte de presare şi tragere în butoate lemn de stejar de 225 litri. În butoaie se iniţiază fermentaţia malolactică, vinul rămânând apoi în butoi minim 12 luni până la îmbuteliere.",
-      variety: "merlot "
+      variety: "Merlot"
     },
     {id:47,
-      producator: "BAUER ",
+      producator: "Bauer",
       name: "BAUER - BAUER SAUVIGNON BLANC 2021",
       wine: "alb ",
       image:
@@ -609,7 +609,7 @@ let produse = [
       country: "Romania",
       description:
         "După desciorchinare, strugurii nu sunt zdrobiţi şi nu se adaugă drojdii selecţionate. Fermentaţia alcoolică are loc în cisterne mici de inox, fără temperatură controlată, “pigeage” fiind făcut manual până la 3 ori pe zi. Vinurile rămân până la 5 săptămâni pe boştină, înainte de presare şi tragere în butoate lemn de stejar de 225 litri. În butoaie se iniţiază fermentaţia malolactică, vinul rămânând apoi în butoi minim 12 luni până la îmbuteliere.",
-      variety: "sauvignon blanc  "
+      variety: "Sauvignon Blanc"
     }
   ];
   const usersContainer = document.getElementById("details");

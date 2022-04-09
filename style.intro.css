@@ -15,6 +15,14 @@ body {
           align-items: center;
 }
 
+.disabledBtn {
+  background-color: grey !important;
+}
+
+.invalid-input {
+  border: 2px solid red !important;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,33 +89,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 10px;
   gap: 10px;
 }
 
-.container .register .formular .input1 {
-  /* border:1px solid red; */
-  width: 50%;
+.container .register .formular .input-form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.container .register .formular .input2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* border: 2px solid black; */
-  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
 }
 

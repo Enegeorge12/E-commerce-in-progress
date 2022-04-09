@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.intro.css">
+    <script src="login.js" defer ></script>
+    <script src="helper.js" defer ></script>
 </head>
 <body>
     <div class="parrent">
@@ -14,32 +16,28 @@
           <p>Un magazin de inrecedere !</p>
         </div>
         <div class="right">
-         <form action="./home.html" method="GET">
+         <form action="home.html" method="post" id="loginForm">
           <img src="./img/ethicLogo.png" alt="logo"/>
           <h1>Sing up Bellow !</h1>
           <div class="forms">
-            
-            
                 <label for="camp_email">Email</label>
                 <input
                type="email"
-               name="adresa_postala"
-               id="camp_email"
-               title="Acceptam doar Google mails."
-               placeholder="Email Adress"
-               multiple
-               pattern=".+@gmail\.com"
+               name="email"
+               id="email"
+               placeholder="Email Adress"  autocomplete="email"
              />
+             <small id="emailMsg"></small>
          
                <label for="pass">Password</label>
-                         <input name="pass" id="field_pass" minlength="8" pattern="[a-z]"
-             placeholder="Password" />
+                         <input name="pass" type="password" id="password" placeholder="Password"  autocomplete="current-password"/>
          
-          <button type="submit">Sing In</button>
+          <button type="submit" id="loginBtn">Sing In</button>
           <section>
           <a href="intro.html">Don't have an acount ? Sing up here !</a>
         </section>
         </form>
         </div>
+       
 </body>
 </html>

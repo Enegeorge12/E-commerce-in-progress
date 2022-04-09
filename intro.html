@@ -6,83 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.intro.css">
+    <script src="./intro-validation.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="image ">
-          <h1>Ethic Wine</h1>
-          <p>Un magazin de inrecedere !</p>
-        </div>
-        <div class="register">
-         <form action="./home.html" method="GET">
-          <img 
-                      src="./img/ethicLogo.png" alt="logo"
+<div class="container">
+    <div class="image ">
+        <h1>Ethic Wine</h1>
+        <p>Un magazin de inrecedere !</p>
+    </div>
+    <div class="register">
+        <form action="./home.html" method="GET" id="registerForm">
+            <img src="./img/ethicLogo.png" alt="logo"/>
+            <div class="formular">
+                <div class="input-form">
+                    <label for="field_first_name">First Name</label>
+                    <input
+                            id="first_name"
+                            type="text"
+                            name="first_name"
+                            required
+                            placeholder="First Name"
+                            minlength="2"
+                            maxlength="10"
+                            size="15"
                     />
-          <h1>Sing up Bellow !</h1>
-          <div class="formular">
-            <div class="input1">
-                <label for="field_first_name">First Name</label>
-                <input
-                id="field_first_name"
-                type="text"
-                name="First_name"
-                required
-                placeholder="First Name"
-                minlength="2"
-                maxlength="10"
-                size="15"
-              />
-          
-            
-              <label for="field_last_name>"> Last Name</label>
-              <input
-                id="field_last_name"
-                type="text"
-                name="First_name"
-                required
-                placeholder="Last Name"
-                minlength="2"
-                maxlength="10"
-                size="15"
-              />
-              <label for="country">City </label>
-              <input type="text"
-              id="city"
-              placeholder="City"
-              >
+
+                    <label for="field_last_name>"> Last Name</label>
+                    <input
+                            id="last_name"
+                            type="text"
+                            name="last_name"
+                            required
+                            placeholder="Last Name"
+                            minlength="2"
+                            maxlength="10"
+                            size="15"
+                    />
+
+                </div>
+                <div class="input-form">
+                    <label for="camp_email">Email</label>
+                    <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email Adress"
+                    />
+                    <small id="emailMsg"></small>
+
+                    <label for="pass">Password</label>
+                    <input name="pass" id="password" placeholder="Password"/>
+
+
+                </div>
+                <div class="input-form">
+                    <label for="city">City </label>
+                    <input type="text"
+                           id="city"
+                           placeholder="City"
+                           name="city"
+                    >
+
+                    <label for="country"> Country </label>
+                    <select name="country" id="country">
+                        <option value="">Select Country</option>
+                        <option value="Bucuresti">Bucuresti</option>
+                        <option value="Iasi ">Iasi</option>
+                        <option value="Timisoara">Timisoara</option>
+                        <option value="Cluj">Cluj</option>
+                    </select>
+
+                </div>
+
             </div>
-            <div class="input2">
-                <label for="camp_email">Email</label>
-                <input
-               type="email"
-               name="adresa_postala"
-               id="camp_email"
-               title="Acceptam doar Google mails."
-               placeholder="Email Adress"
-               multiple
-               pattern=".+@gmail\.com"
-             />
-         
-               <label for="pass">Password</label>
-                         <input name="pass" id="field_pass" minlength="8" pattern="[a-z]"
-             placeholder="Password" />
-         
-              <label for="country"> Country </label>
-             <select>
-               <option value="">Select Country</option>
-               <option value="Bucuresti">Bucuresti</option>
-               <option value="Iasi ">Iasi</option>
-               <option value="Timisoara">Timisoara</option>
-               <option value="Cluj">Cluj</option>
-             </select>
-        
-            </div>
-        
-          </div>
-          <button type="submit">Sing Up</button>
-          <section>
-          <a href="intro.logIn.html">Alerdy have a acount ? Sing in !</a>
-        </section>
+            <button type="submit" id="creatAccount" class="disabledBtn" disabled>Creaza cont</button>
+            <input type="hidden" id="formValidation">
+            <section>
+                <a href="index.html">Alerdy have a acount ? Sing in !</a>
+            </section>
         </form>
+
 </body>
 </html>
