@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.intro.css">
-    <script src="login.js" defer ></script>
-    <script src="helper.js" defer ></script>
+    <script src="login.js" defer></script>
+    <script src="helper.js" defer></script>
 </head>
 <body>
-    <div class="parrent">
-        <div class="imgleft ">
-          <h1>Ehic wine</h1>
-          <p>Un magazin de inrecedere !</p>
-        </div>
-        <div class="right">
-         <form action="home.html" method="post" id="loginForm">
-          <img src="./img/ethicLogo.png" alt="logo"/>
-          <h1>Sing up Bellow !</h1>
-          <div class="forms">
-                <label for="camp_email">Email</label>
-                <input
-               type="email"
-               name="email"
-               id="email"
-               placeholder="Email Adress"  autocomplete="email"
-             />
-             <small id="emailMsg"></small>
-         
-               <label for="pass">Password</label>
-                         <input name="pass" type="password" id="password" placeholder="Password"  autocomplete="current-password"/>
-         
-          <button type="submit" id="loginBtn"> Sing In</button>
-          <section>
-          <a href="intro.html">Don't have an acount ? Sing up here !</a>
-        </section>
+<div class="parrent">
+    <div class="imgleft ">
+        <h1>Ehic wine</h1>
+        <p>Un magazin de inrecedere !</p>
+    </div>
+    <div class="right">
+        <form action="home.html" method="post" id="loginForm">
+            <img src="./img/ethicLogo.png" alt="logo"/>
+            <h1>Sing up Bellow !</h1>
+            <div class="forms">
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="name" autocomplete="email" placeholder="Adesa de mail"/>
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password"
+                           placeholder="Parola"/>
+                    <small></small>
+                </div>
+
+                <button type="submit" id="loginBtn">Log in</button>
+            </div>
         </form>
-        </div>
-       
+        <section>
+            <a href="intro.html">Nu ai cont ? Creaza aici un cont !</a>
+        </section>
+    </div>
+</div>
 </body>
 </html>

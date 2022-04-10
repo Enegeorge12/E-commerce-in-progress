@@ -1,185 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="helper.css">
+    <script src="helper.js" defer></script>
 </head>
 <body>
-  
-    <header>
-        <div class="header ">
-          <div class="logo">
-            <a href="./home.html">
-            <img width="200px"
-              src="./img/ethicLogo.png"
-              alt="logo-img"
-            />
-          </a>
-          </div>
-          <div class="profil">
-            <a href="./index.html">Login</a>
-            <a href="./contact.html">Contact </a>
-            <a href="./intro.html">Register</a>
-            <form action="./cart.page.html">
-              <div class="cart">
-               
-                <button type="submit" class="cart1">
-                  <img
-                    width="15px"
-                    src="https://img.icons8.com/ios/2x/shopping-cart.png"
-                  />
-                </button>
-              </div>
-              </form>
-          </div>
-        </div>
-            <nav class="nav_bar ">
-                    <ul id="nav" >
-                        
-                        <li >
-                            <a href="#" >Categorii ▾</a>
-                            <ul class="dropdown">
-                              <li><a href="#">Vinuri Albe</a></li>
-                              <li><a href="#">Vinuri Rosii</a></li>
-                              <li><a href="#">Vinuri Rose</a></li>
-                          </li>
-                    </ul>
-                     
-                        <li><a href="./about.html">Despre Noi</a></li>
-                        <li><a href="./livrare.html">Livrare</a></li>
-                        <li>
-                          <a href="#">Regiuni ▾</a>
-                          <ul class="dropdown">
-                            <li><a href="#">Romania</a></li>
-                            <li><a href="./franta.html">Franta</a></li>
-                            <li><a href="#">Spania</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./toate.produsele.html">Toate produsele</a></li>
-                    
-                          <li>
-                            <img class="hamburger"
-                            width="20px;"
-                            src="https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
-                          />
-                          </li>
-                        </ul>
-                </div>
-              </nav>
-              <div class="hero ">
-                
-                <h1 class="space"> Un partener de încredere - acoperim întreg teritoriul României și oferim prompt recomandări și consultanță pentru alegerea meniului de vinuri adecvat targetului acestora.
 
-                </h1>       
-                  <div class="search">
-                      <form action="#">
-                        <input type="text" placeholder="Search.." name="search" class="fontSearch"/>
-                        <button type="submit">
-                          <img
+<header>
+    <div class="header ">
+        <div class="logo">
+            <a href="./home.html">
+                <img width="200px"
+                     src="./img/ethicLogo.png"
+                     alt="logo-img"
+                />
+            </a>
+        </div>
+        <div class="profil">
+            <div id="user-container"></div>
+            <div id="user-login-details">
+                <a href="./index.html">Login</a>
+                <a href="./intro.html">Register</a>
+            </div>
+            <form action="./cart.page.html">
+                <div class="cart">
+
+                    <button type="submit" class="cart1">
+                        <img width="15px" src="https://img.icons8.com/ios/2x/shopping-cart.png"/>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <nav class="nav_bar ">
+        <ul id="nav">
+
+            <li>
+                <a href="#">Categorii ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#">Vinuri Albe</a></li>
+                    <li><a href="#">Vinuri Rosii</a></li>
+                    <li><a href="#">Vinuri Rose</a></li>
+                    </li>
+                </ul>
+
+            <li><a href="./about.html">Despre Noi</a></li>
+            <li><a href="./livrare.html">Livrare</a></li>
+            <li>
+                <a href="#">Regiuni ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#">Romania</a></li>
+                    <li><a href="./franta.html">Franta</a></li>
+                    <li><a href="#">Spania</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./toate.produsele.html">Toate produsele</a></li>
+
+            <li>
+                <img class="hamburger"
+                     width="20px;"
+                     src="https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
+                />
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="hero ">
+
+        <h1 class="space"> Un partener de încredere - acoperim întreg teritoriul României și oferim prompt recomandări
+            și consultanță pentru alegerea meniului de vinuri adecvat targetului acestora.
+
+        </h1>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search" class="fontSearch"/>
+                <button type="submit">
+                    <img
                             width="10px"
                             src="https://img.icons8.com/ios-filled/344/search--v1.png"
-                          />
-                        </button>
-                      </form>
-                    </div>
-                  
-                  
-        
-    </header>
-      
-    <main>
-   
-      <section>
-          <h1>Carusel</h1>
-      </section>
-      <div class="space">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit! Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt perspiciatis doloribus?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-      distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
-      incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
-      inventore earum ut suscipit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit! Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt perspiciatis doloribus?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-      distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
-      incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
-      inventore earum ut suscipit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit! Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt perspiciatis doloribus?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-      distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
-      incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
-      inventore earum ut suscipit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit! Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt perspiciatis doloribus?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-      distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
-      incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
-      inventore earum ut suscipit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit! Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt perspiciatis doloribus?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-      distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
-      incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
-      inventore earum ut suscipit.
+                    />
+                </button>
+            </form>
+        </div>
+
+
+</header>
+
+<main>
+
+    <section>
+        <h1>Carusel</h1>
+    </section>
+    <div class="space">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit!
+        Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam
+        dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum
+        molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe
+        expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt
+        perspiciatis doloribus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
+        incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
+        inventore earum ut suscipit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit!
+        Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam
+        dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum
+        molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe
+        expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt
+        perspiciatis doloribus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
+        incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
+        inventore earum ut suscipit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit!
+        Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam
+        dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum
+        molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe
+        expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt
+        perspiciatis doloribus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
+        incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
+        inventore earum ut suscipit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit!
+        Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam
+        dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum
+        molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe
+        expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt
+        perspiciatis doloribus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
+        incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
+        inventore earum ut suscipit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quidem praesentium molestias omnis odit!
+        Ipsum, voluptates id molestias quae, magni iste, asperiores quos impedit dignissimos possimus natus ipsam
+        dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni similique minima assumenda minus eum, ipsum
+        molestias aliquid natus accusamus tempora magnam ab in nam est possimus, commodi nemo dolorem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus earum ratione at neque nostrum. Saepe
+        expedita illum accusamus quas in! Excepturi consequatur officiis distinctio laborum tempore voluptates sunt
+        perspiciatis doloribus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        distinctio quos hic fugit, sapiente eligendi dolor voluptates obcaecati
+        incidunt placeat culpa nulla deleniti. Illo, reprehenderit ratione
+        inventore earum ut suscipit.
     </div>
-    </main>
-    <aside>
-    </aside>
+</main>
+<aside>
+</aside>
 
 <!-- <div style="text-align:center">
 <span class="dot"></span> 
 <span class="dot"></span> 
 <span class="dot"></span> 
 </div> -->
-    <footer >
-      <div class="footer space">
+<footer>
+    <div class="footer space">
         <ul class="list">
             Orar
             <li>Luni: 13 – 22</li>
             <li>Marti – Vineri: 11 – 22</li>
             <li>Sambata: 11 – 22</li>
             <li>Duminica: ÎNCHIS</li>
-          </ul>   
-      
+        </ul>
+
         <ul class="list">
             Contact
             <li>BANU ANTONACHE 55, Piata Floreasca, Bucuresti</li>
             <li>Email: office@ethicwine.ro</li>
             <li>Fix: 021 367 2283</li>
-          </ul>
-           
-          <ul class="list">
+        </ul>
+
+        <ul class="list">
             <li><a href="./livrare.html">
-              Livrare</a></li>
+                Livrare</a></li>
             <li>Termeni si conditii</li>
             <li>Anpc</li>
             <li>Cum cumpar?</li>
-          </ul>
-      </div>
-      <hr/ color="gray">
-      <div class="icon_footer">
-          <a href="https://www.facebook.com/ethicwine.ro/" target="_blank">
+        </ul>
+    </div>
+    <hr
+    / color="gray">
+    <div class="icon_footer">
+        <a href="https://www.facebook.com/ethicwine.ro/" target="_blank">
 
-        <img
-        width="20px" src="./img/Facebook_icon_2013.svg.png"> 
-          </a>
-      </div>
-      <div class="icon_footer">
-          <a href="https://www.instagram.com/ethic_wine/" target="_blank">
+            <img
+                    width="20px" src="./img/Facebook_icon_2013.svg.png">
+        </a>
+    </div>
+    <div class="icon_footer">
+        <a href="https://www.instagram.com/ethic_wine/" target="_blank">
             <img width="20px" src="./img/Instagram_logo_2016.svg.png">
         </a>
-      </div>
-      </footer>
+    </div>
+</footer>
 </body>
 </html>
