@@ -5,7 +5,6 @@
 
 body {
   margin: 0px;
-  /* background-color: rgb(211, 203, 203); */
 }
 
 .space {
@@ -133,212 +132,30 @@ body {
   display: none;
 }
 
-.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.fontSearch {
-  width: 400px;
-}
-
-main {
-  /* padding: 20px; */
-  width: 100%;
-  padding-top: 20px;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* border: 1px solid black; */
-  width: 100%;
-}
-
-.order {
-  border-bottom: 1px solid gainsboro;
-  padding: 10px;
-  margin: 10px;
-  /* width: 100%; */
-}
-
-select {
-  margin-right: 5px;
-}
-
-.h1 {
-  /* padding: 10px; */
-  margin: 10px 0px;
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  /* align-items: center; */
+  /* border: 1px solid red; */
   width: 100%;
-}
-
-.filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  width: 20%;
-  padding: 10px;
-  margin: 10px;
-}
-
-.brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.price_checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.wine_variety {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.wine_type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.vinuri {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding: 0px;
-}
-
-.li-vinuri {
-  background-color: white;
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid gainsboro;
-  -webkit-box-shadow: 2px 2px 2px 2px grey;
-          box-shadow: 2px 2px 2px 2px grey;
-  border-radius: 20px;
-  width: 20%;
-  text-align: center;
-  gap: 10px;
-  padding: 20px;
-  list-style: none;
 }
 
 #add-to-cart {
-  background-color: #571e1a;
-  color: white;
+  width: 30%;
+  padding: 10px;
   border: none;
+  text-align: center;
   cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.p-price {
-  padding: 10px;
-  width: 100%;
-  border-radius: 20px;
-  color: black;
-  border: none;
-}
-
-.a-details {
-  padding: 10px;
-  width: 100%;
-  background-color: #571e1a;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  border: none;
-}
-
-p {
   background-color: #571e1a;
   color: white;
-  padding: 10px;
 }
 
-section {
-  border-bottom: 1px solid gainsboro;
-  padding: 2px;
-}
-
-.checkbox {
+.product-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +163,27 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-details h1 {
+  text-align: center;
+  padding: 0px;
+}
+
+.product-details div {
+  border-bottom: 1px solid gainsboro;
+  width: 100%;
+  /* padding: 10px; */
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
 }
 
 footer {
@@ -354,7 +192,6 @@ footer {
   grid-area: footer;
   text-align: center;
   font-weight: bold;
-  margin-top: 200px;
   /* margin:50px; */
 }
 
@@ -392,6 +229,7 @@ footer a:hover {
 @media (max-width: 700px) {
   .space {
     margin: 0px;
+    padding: 20px;
   }
   .header {
     -webkit-box-orient: vertical;
@@ -417,6 +255,15 @@ footer a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  ul {
+    padding: 0px;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -454,18 +301,5 @@ footer a:hover {
     margin: 0;
     padding: 0;
   }
-  .main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .filter {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }
 }
-/*# sourceMappingURL=toate.produsele.css.map */
+/*# sourceMappingURL=product_details.css.map */

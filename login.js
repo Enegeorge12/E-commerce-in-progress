@@ -16,7 +16,7 @@ const user1 = {
     city: "Bragadiru"
   }
 
-//   addUser(user1);
+  // addUser(user1);
 //   addUser(user2);
 
 //adauga useri la inregistrare

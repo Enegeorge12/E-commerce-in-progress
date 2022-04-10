@@ -622,9 +622,9 @@ let wines = document.createElement("ul");
 wines.classList.add("vinuri");
 mainProduse.appendChild(wines);
 // creare produs 
-function createProduct(prodC){
+function createProduct(prodC,id){
 console.log(prodC)
-  // let pr = document.getElementById('product');
+
 wines.innerHTML="";
   
   for (let i of prodC) {
@@ -644,15 +644,21 @@ wines.innerHTML="";
 
     let pret = document.createElement("p-price");
     pret.classList.add("p-price");
-    pret.textContent = i.price;
+    pret.textContent = i.price + " Lei";
     elem.appendChild(pret);
 
-    let a_details = document.createElement("a");
+    let btnAddCart=document.createElement("button");
+    btnAddCart.setAttribute('id','add-to-cart')
+    btnAddCart.textContent="Adauga in cos"
+    elem.appendChild(btnAddCart)
+    const a_details = document.createElement("a");
     a_details.classList.add("a-details");
     a_details.textContent = "Detalii";
-    // a_details.href = `/product-details.html?id=${id}`;
+    a_details.href = '/product_details.html?id='+i.id;
+  
     elem.appendChild(a_details);
     // pr.appendChild(wines);
+ 
   }
   // console.log(prod)
 }
