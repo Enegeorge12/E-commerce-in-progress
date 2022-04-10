@@ -1,6 +1,6 @@
 
 let produse = [
-  // Franta a
+  // Franta //
   {id:1,
     "producator": "Albert Bichot",
     "name": "ALBERT BICHOT SAINT – AUBIN",
