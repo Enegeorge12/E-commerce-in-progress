@@ -59,7 +59,7 @@
           width: 100%;
           display:flex;
           //  flex-direction: column;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
           margin-bottom: 10px;   
         } 
@@ -69,19 +69,36 @@
        border-radius: 5px;
        outline: none;
        border: 1px solid $intro;
-       padding-left:10px;
+       padding-left:20px;
        height: 40px;
+      //  border: 1px solid red;
+       width: 50%;
       }
       label{
         margin-bottom: 10px;
         font-size: 16px;
         // border: 1px solid red;
+        width: 50%;
        }
        select{
-        height: 45px;
+        height: 45px;;
         border-radius: 5px;
         border: none;
+        width: 60%;
+        margin-bottom: 10px; 
+        
+      }
       
+
+      .field{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        // border:1px solid red ;
+        align-items: center;
+        
+
       }
       button{
         width: 50%;
@@ -89,9 +106,10 @@
         border: none;
         background-color:$color; 
         color:$colorw;
+        
       }
       a{
-        /* border: 1px solid black; */
+        //  border: 1px solid black; 
         text-decoration: none;
         color:$black;
         display: block;
@@ -216,7 +234,7 @@ width: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  // padding: 10px;
   /* border: 1px solid red; */
   background-color:$intro;
   text-align: center;
@@ -241,13 +259,22 @@ width: 50%;
       border-radius: 5px;
       outline: none;
       border: 1px solid $colorw;
-      padding-left:10px;
+      // padding-left:10px;
       height: 40px;
-      width: 100%;
+      width: 70%;
      }
      label{
         font-size: 16px;
        /* border: 1px solid black; */
+       width: 30%;
+      }
+      .field{
+        // border:1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
       }
       
       button{
@@ -256,28 +283,33 @@ width: 50%;
         border: none;
         background-color:$color; 
         color:$colorw;
-        width: 100%;
+        // width: 100%;
+        // border: 10px solid red;
       }
-      a{
-        /* border: 1px solid black; */
-        text-decoration: none;
-        color:$black;
-        display: block;
-        margin-top: 15px;
-        &:hover{
-        text-decoration: underline;
-      }
-    
     
       img{
       margin-top: 10px;
-      }
-      
-    }
-          
+      }   
   }
 }
 }
+section{
+
+  margin-top: 20px;;
+}
+
+  a{
+    // border: 1px solid black; 
+   text-decoration: none;
+   color:$black;
+   display: block;
+   margin-top: 15px;
+   &:hover{
+   text-decoration: underline;
+ }
+}
+  
+
 
 @media screen and (max-width:700px){
 .parrent{

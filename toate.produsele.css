@@ -9,8 +9,8 @@ body {
 }
 
 .space {
-  margin-left: 130px;
-  margin-right: 130px;
+  padding-left: 150px;
+  padding-right: 170px;
 }
 
 .header {
@@ -265,9 +265,9 @@ select {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   padding: 0px;
 }
@@ -392,6 +392,7 @@ footer a:hover {
 @media (max-width: 700px) {
   .space {
     margin: 0px;
+    padding: 0px;
   }
   .header {
     -webkit-box-orient: vertical;
@@ -428,6 +429,9 @@ footer a:hover {
     text-align: center;
     width: 100%;
     /* margin-bottom:20px; */
+  }
+  .li-vinuri {
+    width: 100%;
   }
   .list {
     text-align: center;

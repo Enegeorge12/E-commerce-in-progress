@@ -613,6 +613,19 @@ let produse = [
     "variety": "Sauvignon Blanc"
   }
 ];
+
+// let produse=[];
+
+// // facem un promis/request produse din product.json ("server/local")
+// const endPoiundUrl= "./data/products.json";
+// fetch(endPoiundUrl)
+// .then((res)=>{
+// return res.json();
+// })
+// .then((productRes)=>{
+// produse=productRes;
+// createProduct(produse);
+// })
   const usersContainer = document.getElementById("details");
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");

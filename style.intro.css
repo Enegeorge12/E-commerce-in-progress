@@ -100,8 +100,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,19 +114,40 @@ body {
   border-radius: 5px;
   outline: none;
   border: 1px solid #ccc6c6;
-  padding-left: 10px;
+  padding-left: 20px;
   height: 40px;
+  width: 50%;
 }
 
 .container .register label {
   margin-bottom: 10px;
   font-size: 16px;
+  width: 50%;
 }
 
 .container .register select {
   height: 45px;
   border-radius: 5px;
   border: none;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.container .register .field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .register button {
@@ -137,7 +159,6 @@ body {
 }
 
 .container .register a {
-  /* border: 1px solid black; */
   text-decoration: none;
   color: black;
   display: block;
@@ -297,7 +318,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 10px;
   /* border: 1px solid red; */
   background-color: #ccc6c6;
   text-align: center;
@@ -333,14 +353,31 @@ body {
   border-radius: 5px;
   outline: none;
   border: 1px solid white;
-  padding-left: 10px;
   height: 40px;
-  width: 100%;
+  width: 70%;
 }
 
 .parrent .right .forms label {
   font-size: 16px;
   /* border: 1px solid black; */
+  width: 30%;
+}
+
+.parrent .right .forms .field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .parrent .right .forms button {
@@ -349,23 +386,25 @@ body {
   border: none;
   background-color: #571e1a;
   color: white;
-  width: 100%;
 }
 
-.parrent .right .forms a {
-  /* border: 1px solid black; */
+.parrent .right .forms img {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+a {
   text-decoration: none;
   color: black;
   display: block;
   margin-top: 15px;
 }
 
-.parrent .right .forms a:hover {
+a:hover {
   text-decoration: underline;
-}
-
-.parrent .right .forms a img {
-  margin-top: 10px;
 }
 
 @media screen and (max-width: 700px) {
