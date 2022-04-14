@@ -1,5 +1,11 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 .space {
@@ -273,6 +279,82 @@ main {
   justify-items: flex-start;
 }
 
+.brand-container {
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+}
+
+.brand-container p {
+  position: relative;
+  padding: 10px;
+  -webkit-animation: mymovel 3s linear;
+          animation: mymovel 3s linear;
+  width: 100%;
+}
+
+.brand-container h3 {
+  position: relative;
+  -webkit-animation: mymovel 3s linear;
+          animation: mymovel 3s linear;
+  padding: 10px;
+}
+
+.brand-container img {
+  width: 100%;
+  -webkit-animation: mymove 3s   linear;
+          animation: mymove 3s   linear;
+  position: relative;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes mymovel {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes mymovel {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.article {
+  width: 50%;
+}
+
 h1 {
   text-align: center;
 }
@@ -346,6 +428,19 @@ footer a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .brand-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+  }
+  .article p {
+    padding: 0px;
   }
   .footer {
     -webkit-box-orient: vertical;

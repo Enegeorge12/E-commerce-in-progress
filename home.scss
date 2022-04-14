@@ -1,8 +1,11 @@
 @import "variabiles";
 
-
+*{
+  box-sizing: border-box;
+}
 body{
     margin: 0px;
+    padding: 0px;;
    
   }
   .space{
@@ -202,6 +205,61 @@ body{
     flex-direction:column;
     justify-items: flex-start;
     // border: 1px solid red ;
+  }
+  .brand-container{
+    margin-top: 40px;;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    padding: 10px;
+    // border: 1px solid red;
+    gap: 20px;
+    
+    
+    p {
+      position: relative;
+      padding: 10px;
+      animation: mymovel 3s linear;
+      width: 100%;
+    }
+    h3{
+      position: relative;
+      animation:mymovel 3s linear;
+      
+      padding: 10px;
+    }
+    img {
+      width: 100%;
+      animation: mymove 3s   linear;
+      
+      
+      position: relative;
+    }
+    
+    @keyframes mymove {
+      from {
+        left: -300px;
+      }
+      to {
+        left: 0px;
+      }
+    }
+
+    @keyframes mymovel {
+      from {
+        right: -300px;
+      }
+      to {
+        right: 0px;
+      }
+    }
+
+  }
+  .article {
+    width: 50%;
+    
+    //  border: 1px solid red; 
   
   }
   h1{
@@ -263,6 +321,18 @@ body{
         margin: 0px;
         justify-content: center;
       }
+    .brand-container{
+      flex-direction: column;
+      width: 100%;
+    }
+    .article{
+      // padding: 0px;;
+      width: 100% ;
+      p{
+        padding: 0px;
+      }
+      
+    }
     .footer{
     flex-direction: column;
     justify-items: center;
