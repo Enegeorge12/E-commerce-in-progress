@@ -586,16 +586,13 @@ let produse= [
   }
 ]
 
-let mainProduse = document.querySelector(".product");
-let wines = document.createElement("ul");
-wines.classList.add("vinuri");
-mainProduse.appendChild(wines);
 
 
 function createProduct(prodC){
-
-    
+  // winesDavino.innerHTML="";
     wines.innerHTML="";
+    
+    
       
       for (let i of prodC) {
         let elem = document.createElement("li");
@@ -612,7 +609,7 @@ function createProduct(prodC){
       
         elem.appendChild(imagine);
     
-        let pret = document.createElement("p-price");
+        let pret = document.createElement("p");
         pret.classList.add("p-price");
         pret.textContent = i.price + " Lei";
         elem.appendChild(pret);
@@ -630,28 +627,35 @@ function createProduct(prodC){
       
      
       }
-      
+      // createProduct(produse)
     }
-    // createProduct(produse)
-      produse.find(function(prod){
-        document.querySelector
-      if(prod.producator==="Tenuta"){
-        console.log(prod)
-        document.querySelector(".dom-perignon").innerHTML=prod;
-        
-        
-       }
-      //  createProduct(prod)
-      });
-      
 
-      function filterByBrand(brand){
+      
+        let mainProduse = document.querySelector(".antinori-products");
+        let wines = document.createElement("ul");
+        wines.classList.add("vinuri");
+        mainProduse.appendChild(wines);
+      
         let filteredProduct = produse.filter(function (product) {
-            return product.producator === brand;
+          // document.querySelector(".dom-perignon").innerHTML=product;
+          return product.producator === "Antinori";
+          
         });
         createProduct(filteredProduct);
-    }
+    
 // console.log(produse)
 
 
 
+
+let davino = document.querySelector(".davino-container");
+let winesDavino = document.createElement("ul");
+winesDavino.classList.add("vinuri");
+davino.appendChild(winesDavino);
+
+let filteredProduct2 = produse.filter(function (product) {
+  // document.querySelector(".davino-container").innerHTML=product;
+  return product.producator === "Davino";
+  
+});
+// createProduct(filteredProduct2);
