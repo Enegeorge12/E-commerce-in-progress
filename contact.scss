@@ -1,111 +1,13 @@
 @import "variabiles";
+@import "navbar";
+@import "header";
+@import "footer";
+@import "body";
+@import "space";
+@import "typography";
 
-
-body{
-    margin: 0px;
-   
-  }
-  .space{
-    margin-left: 130px;
-    margin-right:130px;
-    
-  }
- 
-.header{
-  // border:1px solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-  
-}
-.profil {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  gap: 10px;
-  width: 50%;
-  //  border: 1px solid black; 
-  margin-right: 230px;
-  cursor: pointer;
-  padding: 10px;
-  }
-  .logo {
-    display: flex;
-    width: 50%;
-    /* border: 1px solid black; */
-    margin-left: 150px;
-    padding: 10px;
-    // border: 1px solid black;
-  }
-   .profil a{
-    color: black;
-    text-decoration: none;
-  }
-   .profil a:hover{
-    text-decoration: underline;
-  }
-
-
-  #nav{
-   margin: 0px;
-    // padding-left: 130px; 
-    list-style: none;
-    background-color:$color;  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-items: center;
-
-    // border:1px solid $colorw;
-  }
-  #nav li {
-    display: inline-block;
-    position: relative;
-    line-height: 21px;
-    //  margin-left:80px; 
-    
-  }
-  #nav li a {
-    // border: 1px solid white;
-    display: block;
-    padding: 8px 20px;
-    /* margin-left:30px; */
-    color: $colorw;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    
-    
-    
-
-  }
-  #nav li a:hover {
-    background-color: $gray;
-  }
-  #nav li ul.dropdown {
-    min-width: 100%; /*Set width of the dropdown*/
-    background-color:$color;
-    display:none;
-    position: absolute;
-    z-index: 5;
-    left: 0px;
-    padding: 0px;
-  }
-  #nav li:hover ul.dropdown {
-    display: block; /* Display the dropdown */
-  }
-  #nav li ul.dropdown li {
-    display: block;
-  }
-    .hamburger{
-    display: none;
-  }
   main{
-    margin-top: 150px;
+    margin-top: 50px;
     
   }
   .main{
@@ -120,26 +22,49 @@ body{
    .adresa{
      border-radius: 10px;
      width: 50%;
-     box-shadow: 10px 10px 10px 10px gray;
-
+     box-shadow: 10px 10px 10px 10px $gray;
+     animation: adress 2s linear;
+     position: relative;
+    //  border: 1px solid red;
    }
+   @keyframes adress {
+    from {
+      left: -300px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
    .orar{
     border-radius: 10px;
      width: 50%;
-     border:1px solid gainsboro;
-     box-shadow: 10px 10px 10px 10px gray;
+     border:1px solid $border;
+     box-shadow: 10px 10px 10px 10px %gray;
+    //  border: 1px solid red;
+     animation: orar 2s linear;
+     position: relative;
 
    }
+   @keyframes orar {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 0px;
+    }
+  }
    .form-contact{
+     position: relative;
+     animation: form 2s linear;
        width: 100%;
-       border-radius: 50%;
+       border-radius:10px;
        margin-top:  100px;
-      
       //  border: 1px solid red;
        display: flex;
        flex-direction: column;
        align-self: center;
-       box-shadow: 10px 10px 10px 10px gray;
+       box-shadow: 10px 10px 10px 10px $gray;
        gap: 30px;
       //  margin: 0px;
        .form{
@@ -150,7 +75,6 @@ body{
         align-items: center;
        }
        .button{
-        //  background-color: red;
          display: flex;
          justify-content: center;
          width: 50%;
@@ -159,12 +83,21 @@ body{
           color: $colorw;
           width: 50%;
           border: none;
-          box-shadow: 3px 3px 3px 3px gray;
+          box-shadow: 3px 3px 3px 3px $gray;
           // margin-top: 50px;
           margin: 50px;
+          
          }
        }
    }
+   @keyframes form {
+    from {
+      bottom: -400px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
    .name{
     display: flex;
     flex-direction: row;
@@ -195,7 +128,7 @@ body{
     width: 50%;
   }
 input{
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px 3px $gray;
   border: none;
   width: 50%;
   padding: 10px;
@@ -203,73 +136,42 @@ input{
 }
 textarea{
   border: none;
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px 3px $gray;
   width: 50%;
   padding: 10px;
   
 }
+h2{
+  text-align: center;
+  position: relative;
+  animation: h2 2s linear;
+
+}
+@keyframes h2 {
+  from {
+    top: -500px;
+  }
+  to {
+   top: 0px;
+  }
+}
+
    h1{
     text-align: center;
+    position: relative;
+    animation: h1 2s linear;
+  }
+  @keyframes h1 {
+    from {
+      top: -400px;
+    }
+    to {
+     top: 0px;
+    }
   }
    
-
-  
-  footer {
-   background-color: $color;
-   color: $colorw;
-    grid-area: footer;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 200px;
-    /* margin:50px; */
-   
-  }
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-  
-  }
-     
-  li {
-    list-style-type: none;
-
-  }
-  a{
-    text-decoration: none;
-    color: $colorw;
-  }
-  footer a:hover{
-    text-decoration: underline;
-  }
-
-  .icon_footer{
-    display: inline-block;
-    padding: 10px;
-
-
-  }
   @media(max-width: 700px){
-    .space{
-      margin: 0px;
-    }
-   .header{
-    flex-direction: column;
-    justify-content: center;  
-     gap: 20px;
-     }
-    .profil{
-      justify-content: center;
-      width: 100%;
-      margin: 0px;
-      margin-bottom: 20px;;
-    }
-    .logo {
-      width: 100%;
-      margin: 0px;
-      justify-content: center;
-    }
+    
     .main{
         flex-direction: column;
         .orar{
@@ -289,43 +191,4 @@ textarea{
       width: 100%;
     }
    
-    .footer{
-    flex-direction: column;
-    justify-items: center;
-    /* justify-content: center; */
-    text-align: center;
-    width: 100%;
-    /* margin-bottom:20px; */
-    
-    }
-    .list {
-      text-align: center;
-      padding: 10px;
-    }
-    .nav_bar{
-        text-align: center;
-  
-      }
-      #nav li a {
-        display: none;
-      }
-      .hamburger{
-        display: inline;
-        margin: 10px;
-      }           
-      #nav{
-        display: flex;
-        flex-direction: flex-start;
-        margin: 0; 
-        padding: 0; 
-      }
-    
-    }
-    @media (max-width: 1000px) {
-      .profil{
-        margin-right:200px;
-      }
-      .logo{
-        margin-left:20px;
-      }
-    }
+  }

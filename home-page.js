@@ -631,19 +631,118 @@ function createProduct(prodC){
     }
 
       
-        let mainProduse = document.querySelector(".antinori-products");
+        let mainProduse = document.querySelector(".products");
         let wines = document.createElement("ul");
         wines.classList.add("vinuri");
         mainProduse.appendChild(wines);
-      
-        let filteredProduct = produse.filter(function (product) {
-          // document.querySelector(".dom-perignon").innerHTML=product;
-          return product.producator === "Antinori";
+      createProduct(produse)
+        // let filteredProduct = produse.filter(function (product) {
+        //   // document.querySelector(".dom-perignon").innerHTML=product;
+        //   return product.producator === "Antinori";
           
-        });
-        createProduct(filteredProduct);
+        // });
+        // createProduct(filteredProduct);
     
 // console.log(produse)
+
+// let currentPage = 1;
+// const userF = [...produse].splice(0, itemPerPage);
+// createProduct(userF);
+
+// const nextButton = document.getElementById("next_button");
+// const prevButton = document.getElementById("prev_button");
+
+// nextButton.addEventListener("click", () => {
+//   const currentIndex = currentPage * itemPerPage;
+//   const userFP = [...produse].splice(currentIndex, itemPerPage);
+//   console.log(currentIndex);
+//   console.log(userFP);
+//   createProduct(userFP);
+//   currentPage++;
+// });
+
+
+// creat carousel.
+
+const nextButton = document.getElementById("next_button");
+const prevButton = document.getElementById("prev_button");
+// sa fac o variabila globala ca sa-mi pastrez pozitia la carousel
+let countSlides = 0;
+const elWidth = 270;
+
+this.checkVisibiltyNextBtn();
+this.checkVisibiltyPrevButon();
+
+// event listner next buton
+// cand se face click pe buton
+// chem functia de slideImage
+nextButton.addEventListener("click", () => {
+  slideImage("right");
+});
+
+// incrementez countSlides
+// sa setez proprietatea de left, countSlides * -270px
+
+// event listner prev buton
+// cand se face click pe buton
+// chem functia de slideImage
+prevButton.addEventListener("click", () => {
+  slideImage("left");
+});
+
+// functia de slide image trebuie sa aiba un parametru ca sa-mi indice directia
+// daca parametrul este right, atunci incrimenteaza, daca nu dicremeanteaza
+// sa setez proprietatea de left, countSlides * -270px
+function slideImage(dir) {
+  if (dir === "right") {
+    // countSlides++;
+    // countSlides = countSlides + 4;
+    countSlides += 4;
+  } else {
+    // countSlides--;
+    countSlides -= 4;
+  }
+  const left = countSlides * -elWidth;
+  mainProduse.style.left = `${left}px`;
+  checkVisibiltyNextBtn();
+  checkVisibiltyPrevButon();
+}
+
+function checkVisibiltyPrevButon() {
+  if (countSlides <= 0) {
+    prevButton.style.display = "none";
+  } else {
+    prevButton.style.display = "block";
+  }
+}
+
+function checkVisibiltyNextBtn() {
+  const crContainer = document.querySelector(".carousel-container");
+  const initialSlides = crContainer.clientWidth / elWidth;
+  // 1. sa numar cate element am
+  // 2. cand fac next verific ca countSlides + 4 nu trebuie mai mare ca nr de elemente
+  // 3. daca este mai mare atunci ascund butonul de next
+  const totalSlides = mainProduse.querySelectorAll("li").length;
+  if (countSlides + initialSlides + 1 > totalSlides) {
+    nextButton.style.display = "none";
+  } else {
+    nextButton.style.display = "block";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

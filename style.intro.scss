@@ -43,12 +43,13 @@
       flex-direction: column;
       display: flex;
       justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 10px;
-      /* border: 1px solid red; */
+      //  border: 1px solid red; 
       background-color: $intro;
       .formular{
-        /* border: 2px solid violet; */
+        // border: 2px solid violet; 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -106,6 +107,7 @@
         border: none;
         background-color:$color; 
         color:$colorw;
+        // border: 1px solid red;
         
       }
       a{

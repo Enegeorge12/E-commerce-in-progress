@@ -74,14 +74,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 10px;
-  /* border: 1px solid red; */
   background-color: #ccc6c6;
 }
 
 .container .register .formular {
-  /* border: 2px solid violet; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
