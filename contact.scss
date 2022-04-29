@@ -1,10 +1,10 @@
 @import "variabiles";
-@import "navbar";
+@import "_navbar";
 @import "header";
 @import "footer";
 @import "body";
 @import "space";
-@import "typography";
+@import "_typography";
 
   main{
     margin-top: 50px;

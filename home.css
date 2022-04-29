@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+.nav_bar {
+  background-color: #571e1a;
+}
+
 #nav {
   margin: 0px;
   /* padding: 0px; */
@@ -15,7 +19,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  /* gap: 100px; */
 }
 
 #nav li {
@@ -31,7 +34,6 @@
   /* margin-left:30px; */
   color: white;
   text-decoration: none;
-  text-align: center;
   white-space: nowrap;
 }
 
@@ -65,25 +67,38 @@
 
 @media (max-width: 700px) {
   .nav_bar {
-    text-align: center;
-  }
-  #nav li a {
-    display: none;
-  }
-  .hamburger {
-    display: inline;
-    margin: 10px;
+    display: inline-block;
+    width: 100%;
   }
   #nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: flex-start;
-            flex-direction: flex-start;
-    margin: 0;
-    padding: 0;
+    display: none;
+    position: relative;
+    -webkit-animation: myNav 1s linear;
+            animation: myNav 1s linear;
+  }
+  @-webkit-keyframes myNav {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  @keyframes myNav {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  .hamburger {
+    position: relativ;
+    top: 0;
+    display: block;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
   }
 }
 
@@ -371,7 +386,7 @@ main {
   padding: 10px;
 }
 
-.brand-container img {
+.brand-container .article img {
   width: 100%;
   -webkit-animation: mymove 3s   linear;
           animation: mymove 3s   linear;
@@ -393,24 +408,6 @@ main {
   }
   to {
     left: 0px;
-  }
-}
-
-@-webkit-keyframes mymovel {
-  from {
-    right: -300px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-@keyframes mymovel {
-  from {
-    right: -300px;
-  }
-  to {
-    right: 0px;
   }
 }
 

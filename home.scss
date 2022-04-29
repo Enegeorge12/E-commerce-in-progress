@@ -118,12 +118,14 @@
       
       padding: 10px;
     }
-    img {
-      width: 100%;
-      animation: mymove 3s   linear;
-      
-      
-      position: relative;
+    .article{
+      img {
+        width: 100%;
+        animation: mymove 3s   linear;
+        
+        
+        position: relative;
+      }
     }
     
     @keyframes mymove {
@@ -135,14 +137,14 @@
       }
     }
 
-    @keyframes mymovel {
-      from {
-        right: -300px;
-      }
-      to {
-        right: 0px;
-      }
-    }
+    // @keyframes mymovel {
+    //   from {
+    //     right: -300px;
+    //   }
+    //   to {
+    //     right: 0px;
+    //   }
+    // }
 
   }
   .article {
