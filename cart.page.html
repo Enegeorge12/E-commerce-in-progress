@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./cart.page.css">
+  <script src="./navBar.js" defer></script>
 </head>
 <body>
 
@@ -36,40 +37,42 @@
             </form>
         </div>
       </div>
-            <nav class="nav_bar ">
-                    <ul id="nav" >
-                        
-                        <li >
-                            <a href="#" >Categorii ▾</a>
-                            <ul class="dropdown">
-                              <li><a href="#">Vinuri Albe</a></li>
-                              <li><a href="#">Vinuri Rosii</a></li>
-                              <li><a href="#">Vinuri Rose</a></li>
-                          </li>
-                    </ul>
-                     
-                        <li><a href="./about.html">Despre Noi</a></li>
-                        <li><a href="./livrare.html">Livrare</a></li>
-                        <li>
-                          <a href="#">Regiuni ▾</a>
-                          <ul class="dropdown">
-                            <li><a href="#">Romania</a></li>
-                            <li><a href="./franta.html">Franta</a></li>
-                            <li><a href="#">Spania</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./toate.produsele.html">Toate produsele</a></li>
+      <nav>
+        <div class="nav_bar ">
+            <img class="hamburger " onclick="myF()"
+            width="30px"
+            src="https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
+         />
+           
+         <ul id="nav" >
+            <li>
+                <a href="#">Categorii ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#">Vinuri Albe</a></li>
+                     <li><a href="#">Vinuri Rosii</a></li>
+                    <li><a href="#">Vinuri Rose</a></li>
+                 </ul>
+            </li>
+            <li>
+             <a href="#">Regiuni ▾</a>
+            <ul class="dropdown">
+                <li><a href="#">Romania</a></li>
+                <li><a href="./franta.html">Franta</a></li>
+                <li><a href="#">Spania</a></li>
+            </ul>
+        
+            <li><a href="./about.html">Despre Noi</a></li>
+            <li><a href="./livrare.html">Livrare</a></li>
+            
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./toate.produsele.html">Toate Produsele</a></li>
+            
+        </ul>
+       
+    </div>
+</nav>
                     
-                          <li>
-                            <img class="hamburger"
-                            width="20px;"
-                            src="https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
-                          />
-                          </li>
-                        </ul>
-                </div>
-              </nav>  
     </header>
       
     <main>
