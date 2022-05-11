@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./toate.produsele.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
     <script src="./navBar.js" defer></script>
     <script src="./products.js" defer ></script>
 </head>
@@ -90,8 +95,10 @@
 
       <div class="main space">
           <div class="filter">
-            <div class="wine_variety">
-              <section id="wine">Soiuri </section>
+           <h1>Filtreaza</h1>
+            <section id="wine"onclick="  myFSoiuri()">Soiuri   <i class="fa fa-angle-down" style="font-size: 16px;"></i></section>
+            <div class="wine_variety ">
+             
               <label> <input type="checkbox" class="wine_variety_checkbox" id="Pinot Noir"  />Pinot Noir </label>
               <label> <input type="checkbox" class="wine_variety_checkbox" id="Champagne"  />Champagne </label>
               <label> <input type="checkbox" class="wine_variety_checkbox" id="Chardonnay" />Chardonnay</label>
@@ -103,8 +110,11 @@
               <label> <input type="checkbox" class="wine_variety_checkbox" id="Feteasca Alba" />Feteasca Alba</label>
               <label> <input type="checkbox" class="wine_variety_checkbox" id="Cupaj"/>Cupaj</label>
             </div>
-            <div class="brand">
-              <section>Producator</section>
+            <section onclick="myFproducator()">Producator
+              <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+            </section>
+            <div class="brand ">
+              
               <label><input type="checkbox" class="producator_checkbox" id="Davino" />Davino</label>
               <label><input type="checkbox" class="producator_checkbox" id="Bauer" />Bauer</label>
               <label><input type="checkbox" class="producator_checkbox" id="Tenuta" />Tenuta</label>
@@ -116,8 +126,11 @@
               <label><input type="checkbox" class="producator_checkbox" id="1000 De Chipuri" />1000 De Chipuri</label>
               <label><input type="checkbox" class="producator_checkbox" id="Anima" />Anima</label>
             </div>
+            <section onclick="myFPrice()">Pret
+              <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+            </section>
             <div class="price_checkbox">
-              <section>Pret</section>
+             
               <label><input type="checkbox" name="price" class="price_checkbox" id="20-50 Lei" min='20' max="50"/>20-50 Lei</label>
               <label><input type="checkbox" name="price" class="price_checkbox" id="50-100 Lei" min='50' max="100" />50-100 Lei</label>
               <label><input type="checkbox" name="price" class="price_checkbox" id="100-200 Lei" min='100' max="200" />100-200 Lei</label>
@@ -125,8 +138,11 @@
               <label><input type="checkbox" name="price" class="price_checkbox" id="500-1000 Lei" min='500' max="1000" />500-1000 Lei</label>
               <label><input type="checkbox" name="price" class="price_checkbox" id="1000-2500 Lei" min='1000' max="2500" />1000-2500 Lei</label>
             </div>
-            <div class="wine_type">
-              <section>Vinuri</section>
+            <section onclick=" myFwineType()">Vinuri
+              <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+            </section>
+            <div class="wine_type ">
+              
               <label><input type="checkbox" name="wine_type" class="wine_type_checkbox" id="rose" />Vinuri Rose</label>
               <label><input type="checkbox" name="wine_type" class="wine_type_checkbox" id="rosu" />Vinuri Rosii</label>
               <label><input type="checkbox" name="wine_type" class="wine_type_checkbox" id="alb" />Vinuri Albe</label>

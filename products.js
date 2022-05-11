@@ -157,3 +157,39 @@ filterInput.addEventListener("change", (e) => {
     createProduct(produse);
   }
 });
+function myFSoiuri() {
+  let section = document.querySelector(".wine_variety");
+
+  if (section.style.display === "flex") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "flex";
+  }
+}
+function myFproducator() {
+  let section = document.querySelector(".brand");
+
+  if (section.style.display === "flex") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "flex";
+  }
+}
+function myFPrice() {
+  let section = document.querySelector(".price_checkbox");
+
+  if (section.style.display === "flex") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "flex";
+  }
+}
+function myFwineType() {
+  let section = document.querySelector(".wine_type");
+
+  if (section.style.display === "flex") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "flex";
+  }
+}
