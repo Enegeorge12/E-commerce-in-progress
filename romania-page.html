@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./wines-page.css">
-  <script src="./navBar.js"defer></script>
-  <script src="./red-wine-filter.js" defer ></script>
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./country-pages.css">
+    <script src="./navBar.js"defer></script>
+    <script src="./romania-page.js" defer></script>
 </head>
 <body>
-  
     <header>
         <div class="header ">
           <div class="logo">
@@ -52,17 +49,17 @@
                   <a href="#">Categorii ▾</a>
                   <ul class="dropdown">
                     <li><a href="./white-wine.html">Vinuri Albe</a></li>
-                       <li><a href="./red-wines.html">Vinuri Rosii</a></li>
-                      <li><a href="./wine-rose.html">Vinuri Rose</a></li>
-                      <li><a href="./wine-champagne.html">Champagne</a></li>
+                    <li><a href="./red-wines.html">Vinuri Rosii</a></li>
+                   <li><a href="./wine-rose.html">Vinuri Rose</a></li>
+                   <li><a href="./wine-champagne.html">Champagne</a></li>
                    </ul>
               </li>
               <li>
                <a href="#">Regiuni ▾</a>
               <ul class="dropdown">
-                <li><a href="./romania-page.html">Romania</a></li>
-                <li><a href="./franta.html">Franta</a></li>
-                <li><a href="./italia.html">Italia</a></li>
+                  <li><a href="./romania-page.html">Romania</a></li>
+                  <li><a href="./franta.html">Franta</a></li>
+                  <li><a href="./italia.html">Italia</a></li>
               </ul>
           
               <li><a href="./about.html">Despre Noi</a></li>
@@ -77,9 +74,18 @@
       </div>
   </nav>
     </header>
-    <main>
-        <h1>Vinuri Rosii</h1>
-        <div id="wine" class="wines space"></div>
+    <main class="space">
+        <div class="article-container">
+            <article class="article-image">
+                <img src="./img/7-harta.jpg" alt="romania-map" width="500px" >
+            </article>
+            <article class="article-text" >
+                <h4>Romania</h4>
+                <p>România are circa 180.000 de hectare cu viţă-de-vie, iar cu acest nivel al suprafeţei ocupate cu viţă, piaţa locală se află pe locul cinci în UE şi pe locul 11 în lume. Totuşi, doar jumătate din suprafaţă este cultivată de marii producători sau de jucători care au vii de nivel european, o pondere mult mai mică decât media europeană.
+                    România exportă anual doar 4% din totalul vinului pe care îl produce, cifră care o poziţionează pe penultimul loc în UE (între ţările care produc vin), fiind urmată doar de Malta. Prin comparaţie, marii producători precum Spania, Portugalia sau Italia exportă circa jumătate din ce produc. În cazul Franţei ponderea este la 30%, arată datele biroului de statistică european Eurostat.
+                </p> </article>
+        </div>
+        <div class="product" ></div>
     </main>
     <footer >
         <div class="footer space">
@@ -120,7 +126,6 @@
           </a>
         </div>
         </footer>
-        
-  </body>
-  </html>
   
+</body>
+</html>

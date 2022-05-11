@@ -41,7 +41,7 @@ wines.innerHTML="";
   
     elem.appendChild(imagine);
 
-    let pret = document.createElement("p-price");
+    let pret = document.createElement("p");
     pret.classList.add("p-price");
     pret.textContent = i.price + " Lei";
     elem.appendChild(pret);

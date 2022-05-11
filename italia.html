@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./wines-page.css">
-  <script src="./navBar.js"defer></script>
-  <script src="./red-wine-filter.js" defer ></script>
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./country-pages.css">
+    <script src="./navBar.js"defer></script>
+    <script src="./italia-page.js" defer></script>
 </head>
 <body>
-  
     <header>
         <div class="header ">
           <div class="logo">
@@ -52,17 +49,17 @@
                   <a href="#">Categorii ▾</a>
                   <ul class="dropdown">
                     <li><a href="./white-wine.html">Vinuri Albe</a></li>
-                       <li><a href="./red-wines.html">Vinuri Rosii</a></li>
-                      <li><a href="./wine-rose.html">Vinuri Rose</a></li>
-                      <li><a href="./wine-champagne.html">Champagne</a></li>
+                    <li><a href="./red-wines.html">Vinuri Rosii</a></li>
+                   <li><a href="./wine-rose.html">Vinuri Rose</a></li>
+                   <li><a href="./wine-champagne.html">Champagne</a></li>
                    </ul>
               </li>
               <li>
                <a href="#">Regiuni ▾</a>
               <ul class="dropdown">
-                <li><a href="./romania-page.html">Romania</a></li>
-                <li><a href="./franta.html">Franta</a></li>
-                <li><a href="./italia.html">Italia</a></li>
+                  <li><a href="./romania-page.html">Romania</a></li>
+                  <li><a href="./franta.html">Franta</a></li>
+                  <li><a href="./italia.html">Italia</a></li>
               </ul>
           
               <li><a href="./about.html">Despre Noi</a></li>
@@ -77,9 +74,19 @@
       </div>
   </nav>
     </header>
-    <main>
-        <h1>Vinuri Rosii</h1>
-        <div id="wine" class="wines space"></div>
+    <main class="space">
+        <div class="article-container">
+            <article class="article-image">
+                <img src="./img/italia.png" alt="italia-map">
+            </article>
+            <article class="article-text" >
+                <h4>Italia</h4>
+                <p>Italia este unul dintre cei mai importanți doi producători de vin din întreaga lume.
+                    Grecii au plantat vii în Italia începând cu anul 800 î.Hr., denumind țara "Oenotria" sau "Țara vițelor de vie". Până în momentul în care Imperiul Roman de Vest s-a destrămat - în 476 d.Hr., au fost stabilite toate regiunile viticole moderne ale Europei cu excepția Bordeauxului. Conform textelor lui Plinius cel Bătrân din primul secol după Cristos, romanii au introdus noțiunile de selecție a parcelelor și altoirea vițelor de vie, lucruri ce rămân relevante și azi.</p>
+            </article>
+
+        </div>
+        <div class="product" ></div>
     </main>
     <footer >
         <div class="footer space">
@@ -120,7 +127,6 @@
           </a>
         </div>
         </footer>
-        
-  </body>
-  </html>
   
+</body>
+</html>

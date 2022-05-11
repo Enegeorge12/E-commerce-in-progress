@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./wines-page.css">
-  <script src="./navBar.js"defer></script>
-  <script src="./red-wine-filter.js" defer ></script>
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./country-pages.css">
+    <script src="./navBar.js"defer></script>
+    <script src="./franta-page.js" defer></script>
 </head>
 <body>
-  
     <header>
         <div class="header ">
           <div class="logo">
@@ -52,17 +49,17 @@
                   <a href="#">Categorii ▾</a>
                   <ul class="dropdown">
                     <li><a href="./white-wine.html">Vinuri Albe</a></li>
-                       <li><a href="./red-wines.html">Vinuri Rosii</a></li>
-                      <li><a href="./wine-rose.html">Vinuri Rose</a></li>
-                      <li><a href="./wine-champagne.html">Champagne</a></li>
+                    <li><a href="./red-wines.html">Vinuri Rosii</a></li>
+                   <li><a href="./wine-rose.html">Vinuri Rose</a></li>
+                   <li><a href="./wine-champagne.html">Champagne</a></li>
                    </ul>
               </li>
               <li>
                <a href="#">Regiuni ▾</a>
               <ul class="dropdown">
-                <li><a href="./romania-page.html">Romania</a></li>
-                <li><a href="./franta.html">Franta</a></li>
-                <li><a href="./italia.html">Italia</a></li>
+                  <li><a href="./romania-page.html">Romania</a></li>
+                  <li><a href="./franta.html">Franta</a></li>
+                  <li><a href="./italia.html">Italia</a></li>
               </ul>
           
               <li><a href="./about.html">Despre Noi</a></li>
@@ -77,10 +74,19 @@
       </div>
   </nav>
     </header>
-    <main>
-        <h1>Vinuri Rosii</h1>
-        <div id="wine" class="wines space"></div>
+    <main class="space">
+        <div class="article-container">
+            <article class="article-image">
+                <img src="./img/franta.png" alt="franta-map" >
+            </article>
+            <article class="article-text" >
+                <h4>Franta</h4>
+                <p>Franța nu poate pretinde că este locul în care s-a născut vinul, dar, cu siguranță, de câteva sute de ani este o forță dominantă, fiind unul dintre cei mai importanți doi producători din întreaga lume. Este cel de-al doilea producător de vin din lume atunci când vorbim despre volum, dar rămâne centrul global de producere a vinurilor fine. De asemenea, Franța este și pionierul introducerii apelațiunilor de origine controlată (AOC), proiect legislativ preluat de celelalte țări din Europa.    
+                </p> </article>
+        </div>
+        <div class="product" ></div>
     </main>
+   
     <footer >
         <div class="footer space">
           <ul class="list">
@@ -120,7 +126,6 @@
           </a>
         </div>
         </footer>
-        
-  </body>
-  </html>
   
+</body>
+</html>

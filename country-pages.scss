@@ -1,0 +1,28 @@
+@import "variabiles";
+@import "navbar";
+@import "header";
+@import "footer";
+@import "body";
+@import "space";
+@import "typography";
+@import "productStyle";
+
+.article-container{
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid red;
+    margin: 20px;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+@media (max-width:700px) {
+    .article-container{
+        flex-direction: column;
+    }
+    .article-image img{
+        width: 100%;
+    }
+   
+}

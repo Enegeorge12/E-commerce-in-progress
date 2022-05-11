@@ -3,7 +3,8 @@
 @import "header";
 @import "footer";
 @import "body";
-@import "_typography";
+@import "typography";
+@import "productStyle";
 
 
 
@@ -100,63 +101,9 @@
     flex-direction: column;
     gap: 10px;
   }
-  .vinuri{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    width: 100%;
-    padding: 0px;
-  }
-  .li-vinuri{
-    background-color: $colorw;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid $border;
-    box-shadow: 2px 2px 2px 2px $gray;
-    border-radius: 20px;
-    width: 20%;
-    text-align: center;
-    gap: 10px;
-    padding: 20px;
-    list-style: none;
-  }
-  #add-to-cart{
-    background-color: $color;
-    color: $colorw;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border-radius: 20px;
-  }
-  
-  .p-price{
-    padding: 10px;
-    width: 100%;
-    border-radius: 20px;
-    color:$black;
-    // cursor: pointer;
-    border: none;
-  }
-  .a-details{
-    padding: 10px;
-    width: 100%;
-    background-color:$color;
-    border-radius: 20px;
-    color:$colorw;
-    cursor: pointer;
-    border: none;
 
-  }
-  p {
-    background-color: $color;
-    color:$colorw;
-    padding: 10px;
-  }
+  
+ 
 
   section {
     border-bottom: 1px solid $border;
@@ -176,11 +123,7 @@
       padding: 0px;;
     }
     
-    .li-vinuri{
-      // padding:2px; 
-      width: 100%
-      // justify-content: space-between;
-    }
+   
     .list {
       text-align: center;
       padding: 10px;
