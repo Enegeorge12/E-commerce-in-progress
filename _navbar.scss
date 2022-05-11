@@ -2,16 +2,20 @@
 
 .nav_bar{
   background-color: $color;
+  width: 100%;
+  
 }
 
 #nav{
+
     margin: 0px;
-     /* padding: 0px; */
+     padding:0px; 
      list-style: none;
      background-color:$color;  
      display: flex;
      flex-direction: row;
-     justify-content: space-evenly;
+     justify-content:center;
+     gap: 70px;
     
     
   
@@ -20,18 +24,17 @@
    #nav li {
      display: inline-block;
      position: relative;
-     line-height: 21px;
-     /* margin-left:80px; */
+  
      
    }
    #nav li a {
      display: block;
-     padding: 8px 20px;
-     /* margin-left:30px; */
+     padding: 8px 20px  ; 
      color: $colorw;
      text-decoration: none;
-    //  text-align: center;
+     text-align: center;
      white-space: nowrap;
+   
      
    }
    #nav li a:hover {
@@ -67,6 +70,8 @@
       display: none;
       position: relative;
       animation: myNav 1s linear;
+      gap: 20px;
+      
     
     }
     @keyframes myNav {

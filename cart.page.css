@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .nav_bar {
   background-color: #571e1a;
+  width: 100%;
 }
 
 #nav {
   margin: 0px;
-  /* padding: 0px; */
+  padding: 0px;
   list-style: none;
   background-color: #571e1a;
   display: -webkit-box;
@@ -16,24 +17,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
 }
 
 #nav li {
   display: inline-block;
   position: relative;
-  line-height: 21px;
-  /* margin-left:80px; */
 }
 
 #nav li a {
   display: block;
   padding: 8px 20px;
-  /* margin-left:30px; */
   color: white;
   text-decoration: none;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -75,6 +75,7 @@
     position: relative;
     -webkit-animation: myNav 1s linear;
             animation: myNav 1s linear;
+    gap: 20px;
   }
   @-webkit-keyframes myNav {
     from {
