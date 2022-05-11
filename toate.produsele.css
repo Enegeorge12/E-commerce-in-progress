@@ -285,8 +285,9 @@ p, li, a, button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   padding: 0px;
 }
@@ -373,6 +374,11 @@ p, li, a, button {
   margin-bottom: 20px;
 }
 
+input[type="text"] {
+  width: 50%;
+  text-align: center;
+}
+
 main {
   /* padding: 20px; */
   width: 100%;
@@ -387,7 +393,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* border: 1px solid black; */
   width: 100%;
 }
 
@@ -505,6 +510,16 @@ section {
   .space {
     margin: 0px;
     padding: 0px;
+  }
+  .wine_variety {
+    width: 50%;
+  }
+  .wine_type {
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 70px;
   }
   .list {
     text-align: center;

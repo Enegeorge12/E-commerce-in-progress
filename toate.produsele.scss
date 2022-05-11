@@ -25,7 +25,11 @@
     //  margin-top: 10px;
      margin-bottom: 20px;
    }
-   
+   input[type="text"]{
+     width: 50%;
+     text-align: center;
+     
+   }
 
   main{
     /* padding: 20px; */
@@ -38,7 +42,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    //  border: 1px solid black; 
     width: 100%;
   }
   .order {
@@ -77,11 +81,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    // border: 1px solid red;
   }
   .price_checkbox {
     display: flex;
     flex-direction: column;
+    // border: 1px solid red;
 
     gap: 10px;
   }
@@ -94,12 +99,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    // border: 1px solid red;
   
   }
   .wine_type{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    // border: 1px solid red;
   }
 
   
@@ -123,7 +130,15 @@
       padding: 0px;;
     }
     
-   
+    .wine_variety{
+      width: 50%;
+    }
+    .wine_type{
+      width: 50%;
+      justify-content: flex-start;
+      
+      padding-left: 70px;
+    }
     .list {
       text-align: center;
       padding: 10px;
