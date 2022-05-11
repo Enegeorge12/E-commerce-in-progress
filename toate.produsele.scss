@@ -78,16 +78,14 @@
     
   }
   .brand {
-    display: flex;
-    flex-direction: column;
+    display: none;
     gap: 10px;
     // border: 1px solid red;
     position: relative;
     transition: all 1s ease-in;
   }
   .price_checkbox {
-    display: flex;
-    flex-direction: column;
+   display: none;
     // border: 1px solid red;
 
     gap: 10px;
@@ -96,25 +94,24 @@
     display: flex;
     flex-direction:row;
   }
+  input[type=checkbox]{
+    display: block;
+  }
   
   .wine_variety {
-    display: flex;
-    flex-direction: column;
+    display: none;
     gap: 10px;
     // border: 1px solid red;
   
   }
   .wine_type{
-    display: flex;
-    flex-direction: column;
+   display: none;
     gap: 10px;
     // border: 1px solid red;
   }
 
   
- .show-fillter{
-   display: flex;
- }
+ 
 
   section {
     border-bottom: 1px solid $border;

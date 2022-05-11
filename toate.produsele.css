@@ -134,6 +134,9 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 50%;
   margin-right: 230px;
@@ -438,13 +441,7 @@ select {
 }
 
 .brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   gap: 10px;
   position: relative;
   -webkit-transition: all 1s ease-in;
@@ -452,13 +449,7 @@ select {
 }
 
 .price_checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   gap: 10px;
 }
 
@@ -472,32 +463,18 @@ label {
           flex-direction: row;
 }
 
+input[type=checkbox] {
+  display: block;
+}
+
 .wine_variety {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   gap: 10px;
 }
 
 .wine_type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   gap: 10px;
-}
-
-.show-fillter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 section {
