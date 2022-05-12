@@ -46,12 +46,17 @@ h1{
 
 
 
+    .description{
+        width: 100%;
+        padding: 20px;;
+
+    }
+
 .form-contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: 3px solid black;
     gap: 20px;
     animation: form-contact 1s linear;
     position: relative;
@@ -89,7 +94,7 @@ h1{
 textarea{
     display: flex;
     flex-direction: row; 
-   // border: 1px solid red;
+//    border: 1px solid red;
     justify-content: space-around;
      align-items: center;
       gap: 20px;

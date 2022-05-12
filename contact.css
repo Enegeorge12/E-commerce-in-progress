@@ -361,6 +361,11 @@ h1 {
   }
 }
 
+.description {
+  width: 100%;
+  padding: 20px;
+}
+
 .form-contact {
   display: -webkit-box;
   display: -ms-flexbox;

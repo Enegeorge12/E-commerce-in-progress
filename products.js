@@ -159,40 +159,52 @@ filterInput.addEventListener("change", (e) => {
 });
 function myFSoiuri() {
   let section = document.querySelector(".wine_variety");
+  let icon = document.querySelector(" .fa-angle-down");
 
   if (section.style.display === "none") {
+    icon.classList.add("fa-rotate");
     section.style.display = "flex";
     section.style.flexDirection = "column"
   } else {
     section.style.display = "none";
+    icon.classList.remove("fa-rotate");
   }
 }
 function myFproducator() {
   let section = document.querySelector(".brand");
+  let icon = document.querySelector(" .faIcon");
 
   if (section.style.display === "none") {
+    icon.classList.add("fa-rotate");
     section.style.display = "flex";
     section.style.flexDirection = "column"
   } else {
     section.style.display = "none";
+    icon.classList.remove("fa-rotate");
   }
 }
 function myFPrice() {
   let section = document.querySelector(".price_checkbox");
+  let icon = document.querySelector(" .fa-Icon");
 
   if (section.style.display === "none") {
+    icon.classList.add("fa-rotate");
     section.style.display = "flex";
     section.style.flexDirection = "column"
   } else {
     section.style.display = "none";
+    icon.classList.remove("fa-rotate");
   }
 }
 function myFwineType() {
   let section = document.querySelector(".wine_type");
+  let icon = document.querySelector(" .fa-faIcon");
   if (section.style.display === "none") {
+    icon.classList.add("fa-rotate");
     section.style.display = "flex";
     section.style.flexDirection = "column"
   } else {
     section.style.display = "none";
+    icon.classList.remove("fa-rotate");
   }
 }

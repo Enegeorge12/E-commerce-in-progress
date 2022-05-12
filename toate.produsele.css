@@ -477,6 +477,13 @@ input[type=checkbox] {
   gap: 10px;
 }
 
+.fa-rotate {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
 section {
   border-bottom: 1px solid gainsboro;
   padding: 2px;

@@ -41,6 +41,7 @@
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    
   }
   input[type="number"] {
     width: 50px;
@@ -60,6 +61,7 @@
     padding: 100px 0px 50px;
     /* margin: 10px; */
     justify-content: space-around;
+    
     
     gap: 20px;
   }
@@ -130,7 +132,11 @@
         align-items: center;
     }
 
+
   }
+
+  
+
   input {
     width: 100%;
     background: transparent;
