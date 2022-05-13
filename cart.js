@@ -616,28 +616,21 @@ window.addEventListener('load', function () {
     let user = fetchUserLogin();
     if (user !== undefined) {
         let products = user.products
-
+        
         let productList = document.getElementById("product-list");
         let html = '';
         for(const product of products){
-            data = produse.find(function(elem,product){
-            console.log(elem)
-
-                return elem.id = product
-            })
-
-            
-            productList.innerHTML = '<div class="products">'+
+            html = '<div class="products">'+
                 '<div class="prod">'+
-                  '<img src="./'+data.image+'" alt="logo" width="50px" />'+
-                  '<div class="nameProduct">'+data.name+'</div>'+
+                  '<img src="./'+product.image+'" alt="logo" width="50px" />'+
                 '</div>'+
                 '<div class="number">'+
                   '<input type="number" value="1" />'+
                 '</div>'+
-                '<div class="price">'+data.price+'</div>'+
-              '</div>'
+                '<div class="price">'+product.price+'</div>'+
+              '</div>'+
 
+              productList.innerHTML(html);
         }
     }
   })
