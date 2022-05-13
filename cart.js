@@ -630,6 +630,7 @@ window.addEventListener('load', function () {
             productList.innerHTML = '<div class="products">'+
                 '<div class="prod">'+
                   '<img src="./'+data.image+'" alt="logo" width="50px" />'+
+                  '<div class="nameProduct">'+data.name+'</div>'+
                 '</div>'+
                 '<div class="number">'+
                   '<input type="number" value="1" />'+

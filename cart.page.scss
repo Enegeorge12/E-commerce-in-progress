@@ -41,6 +41,23 @@
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    width: 100%;
+    .prod{
+      // border: 1px solid red;
+      width: 30%;
+    }
+    .number{
+      // border: 1px solid red;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    .price{
+      // border: 1px solid red;
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
     
   }
   input[type="number"] {
