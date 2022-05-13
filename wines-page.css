@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .nav_bar {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   width: 100%;
 }
 
@@ -9,17 +9,10 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
-  background-color: #571e1a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(87, 30, 26);
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   gap: 70px;
 }
 
@@ -44,7 +37,7 @@
 #nav li ul.dropdown {
   min-width: 100%;
   /*Set width of the dropdown*/
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   display: none;
   position: absolute;
   z-index: 5;
@@ -70,21 +63,14 @@
     display: inline-block;
     width: 100%;
   }
+
   #nav {
     display: none;
     position: relative;
-    -webkit-animation: myNav 1s linear;
-            animation: myNav 1s linear;
+    animation: myNav 1s linear;
     gap: 20px;
   }
-  @-webkit-keyframes myNav {
-    from {
-      left: -200px;
-    }
-    to {
-      left: 0px;
-    }
-  }
+
   @keyframes myNav {
     from {
       left: -200px;
@@ -102,41 +88,21 @@
     cursor: pointer;
   }
 }
-
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   gap: 10px;
 }
 
 .profil {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
   gap: 10px;
   width: 50%;
   margin-right: 230px;
@@ -145,8 +111,6 @@
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
   /* border: 1px solid black; */
@@ -165,47 +129,32 @@
 
 @media (max-width: 700px) {
   .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
   }
+
   .profil {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 100%;
     margin: 0px;
     margin-bottom: 20px;
   }
+
   .logo {
     width: 100%;
     margin: 0px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   color: white;
   grid-area: footer;
   text-align: center;
@@ -243,31 +192,27 @@ footer a:hover {
 
 @media (max-width: 700px) {
   .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     justify-items: center;
     /* justify-content: center; */
     text-align: center;
     width: 100%;
     /* margin-bottom:20px; */
   }
+
   .list {
     text-align: center;
     padding: 10px;
   }
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 .space {
@@ -280,9 +225,8 @@ body {
     margin: 0px;
   }
 }
-
 h1, h2, h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 p, li, a, button {
@@ -290,18 +234,10 @@ p, li, a, button {
 }
 
 .vinuri {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   width: 100%;
   padding: 0px;
 }
@@ -309,22 +245,12 @@ p, li, a, button {
 .li-vinuri {
   background-color: white;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid gainsboro;
-  -webkit-box-shadow: 2px 2px 2px 2px gray;
-          box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 2px 2px 2px 2px gray;
   border-radius: 20px;
   width: 20%;
   text-align: center;
@@ -336,7 +262,7 @@ p, li, a, button {
 .a-details {
   padding: 10px;
   width: 100%;
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   border-radius: 20px;
   color: white;
   cursor: pointer;
@@ -344,7 +270,7 @@ p, li, a, button {
 }
 
 #add-to-cart {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   color: white;
   border: none;
   cursor: pointer;
@@ -366,9 +292,9 @@ p, li, a, button {
     width: 100%;
   }
 }
-
 main {
   text-align: center;
   margin-top: 0px;
 }
+
 /*# sourceMappingURL=wines-page.css.map */

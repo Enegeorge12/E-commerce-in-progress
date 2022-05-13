@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .nav_bar {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   width: 100%;
 }
 
@@ -9,17 +9,10 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
-  background-color: #571e1a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(87, 30, 26);
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   gap: 70px;
 }
 
@@ -44,7 +37,7 @@
 #nav li ul.dropdown {
   min-width: 100%;
   /*Set width of the dropdown*/
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   display: none;
   position: absolute;
   z-index: 5;
@@ -70,21 +63,14 @@
     display: inline-block;
     width: 100%;
   }
+
   #nav {
     display: none;
     position: relative;
-    -webkit-animation: myNav 1s linear;
-            animation: myNav 1s linear;
+    animation: myNav 1s linear;
     gap: 20px;
   }
-  @-webkit-keyframes myNav {
-    from {
-      left: -200px;
-    }
-    to {
-      left: 0px;
-    }
-  }
+
   @keyframes myNav {
     from {
       left: -200px;
@@ -102,41 +88,21 @@
     cursor: pointer;
   }
 }
-
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   gap: 10px;
 }
 
 .profil {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
   gap: 10px;
   width: 50%;
   margin-right: 230px;
@@ -145,8 +111,6 @@
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
   /* border: 1px solid black; */
@@ -165,47 +129,32 @@
 
 @media (max-width: 700px) {
   .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
   }
+
   .profil {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 100%;
     margin: 0px;
     margin-bottom: 20px;
   }
+
   .logo {
     width: 100%;
     margin: 0px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   color: white;
   grid-area: footer;
   text-align: center;
@@ -243,31 +192,27 @@ footer a:hover {
 
 @media (max-width: 700px) {
   .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     justify-items: center;
     /* justify-content: center; */
     text-align: center;
     width: 100%;
     /* margin-bottom:20px; */
   }
+
   .list {
     text-align: center;
     padding: 10px;
   }
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 .space {
@@ -280,9 +225,8 @@ body {
     margin: 0px;
   }
 }
-
 h1, h2, h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 p, li, a, button {
@@ -290,159 +234,94 @@ p, li, a, button {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 100px 0px;
 }
 
 .parrent {
   border: 1px solid gainsboro;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   /* margin-left: 20px; */
   width: 100%;
-  -webkit-box-shadow: 10px 10px 10px 10px gray;
-          box-shadow: 10px 10px 10px 10px gray;
+  box-shadow: 10px 10px 10px 10px gray;
 }
 
 .first_line {
   /* border: 1px solid black; */
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid gainsboro;
 }
 
 .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-input[type="number"] {
+input[type=number] {
   width: 50px;
 }
 
 .total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10px;
   border: 1px solid gainsboro;
 }
 
 .shopp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   padding: 100px 0px 50px;
   /* margin: 10px; */
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   gap: 20px;
 }
 
 .contactDetalis {
   border: 1px solid gainsboro;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 25%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px;
   gap: 14px;
-  -webkit-box-shadow: 1px 1px 1px 1px gray;
-          box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px gray;
   border-radius: 10%;
 }
-
 .contactDetalis #name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 20px;
 }
-
 .contactDetalis #name input[type=text] {
   margin-top: 20px;
 }
 
 .metod_pay {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid gainsboro;
   padding: 20px;
   gap: 3px;
-  -webkit-box-shadow: 1px 1px 1px 1px gray;
-          box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px gray;
   border-radius: 10%;
 }
-
 .metod_pay input[type=checkbox] {
   width: auto;
   margin-bottom: 10px;
 }
-
 .metod_pay input[type=text] {
   width: 100%;
 }
@@ -450,49 +329,27 @@ input[type="number"] {
 .payment {
   border: 1px solid gainsboro;
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px;
   gap: 20px;
-  -webkit-box-shadow: 1px 1px 1px 1px gray;
-          box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px gray;
   border-radius: 10%;
 }
-
 .payment .card_accept {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   gap: 20px;
 }
-
 .payment .exp_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 10px;
   padding: 5px;
   width: 100%;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 input {
@@ -512,24 +369,17 @@ select {
 
 .submit {
   /* border: 1px solid gainsboro; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* justify-content: center; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   /* padding: 20px; */
   width: 100%;
 }
 
 .parrent button {
-  background-color: #571e1a;
+  background-color: rgb(87, 30, 26);
   color: white;
   width: 20%;
   padding: 5px;
@@ -539,18 +389,12 @@ select {
 }
 
 .gdpr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid gainsboro;
   padding: 20px;
   margin-bottom: 50px;
 }
-
 .gdpr input[type=checkbox] {
   width: auto;
 }
@@ -569,25 +413,24 @@ h1 {
 
 @media (max-width: 700px) {
   .shopp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .contactDetalis {
     width: 100%;
     padding: 20px;
   }
+
   .metod_pay {
     width: 100%;
     padding: 20px;
   }
+
   .payment {
     width: 100%;
     padding: 20px;
   }
 }
+
 /*# sourceMappingURL=cart.page.css.map */

@@ -47,7 +47,8 @@ wines.innerHTML="";
     elem.appendChild(pret);
 
     let btnAddCart=document.createElement("button");
-    btnAddCart.setAttribute('id','add-to-cart')
+    btnAddCart.setAttribute('id','add-to-cart');
+    btnAddCart.classList.add("addToCart");
     btnAddCart.textContent="Adauga in cos"
     elem.appendChild(btnAddCart)
     const a_details = document.createElement("a");

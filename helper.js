@@ -1,5 +1,7 @@
 const INVALID_EMAIL = 'Email invalid !';
-const INPUT_REQUIRED = 'Campul nu trebuie sa fie gol !';
+const INPUT_REQUIRED = 'Campul este obligatoriu';
+const INPUT_MINIM = 'Campul trebuie sa contina cel putin 2 caractere';
+const INPUT_UPPERCASE = 'Campul trebuie sa inceapa cu o majuscula';
 const INVALID_PASSWORD = 'Parola trebuie sa aibe sa contina .....';
 const INVALID_LOGIN = 'Datele de logare nu sunt bune';
 
@@ -30,15 +32,34 @@ function fetchUserLogin() {
 
 function appendUserDetails() {
     let user = fetchUserLogin();
-
     if (user !== undefined) {
-        console.log(user);
-        let text = user.fistName + ' ' + user.lastName + ' | ' + 'Log out';
+        let text = user.fistName + ' ' + user.lastName;
         let userContainer = document.getElementById('user-container');
+        
         if (userContainer !== null) {
             userContainer.append(text);
             document.getElementById('user-login-details').classList.add('display-none');
+            document.getElementById('user-logout').classList.remove('display-none');
         }
+    }
+}
+
+function checkUserLogIn(){
+    let user = fetchUserLogin();
+    if (user === undefined) {
+        window.location.href = 'index.html'
+    }
+}
+
+function logout(){
+    localStorage.removeItem('userLogin');
+    window.location.href = 'index.html'
+}
+
+function addToCart(){
+    let user = fetchUserLogin();
+    if (user !== undefined) {
+       console.log(user);
     }
 }
 
@@ -71,4 +92,5 @@ function validatePassword(input) {
 }
 
 ///////////////////////
+// checkUserLogIn();
 appendUserDetails();

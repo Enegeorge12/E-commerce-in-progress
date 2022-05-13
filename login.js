@@ -27,7 +27,7 @@ form.addEventListener('submit', (event) => {
     let password = form.elements["password"].value;
 
     if(!validateEmail(email) || isInputEmpty(password)){
-        addInputMessage(form.elements["password"],INVALID_LOGIN);
+        addInputMessage(password,INVALID_LOGIN);
     }
 
     let user = fetchUser(email);

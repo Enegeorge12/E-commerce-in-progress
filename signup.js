@@ -1,34 +1,29 @@
 const form = document.getElementById('signup');
-let validForm = false;
 
-for (let element of form.elements) {
-    isInputValid(element);
-}
+form.addEventListener("submit", function (e) {
+    const user = {
+        fistName: form.elements.first_name.value,
+        lastName: form.elements.last_name.value,
+        password: form.elements.password.value,
+        email: form.elements.email.value,
+        country: form.elements.country.selectedIndex,
+        city: form.elements.city.value
+    }
 
-if(validForm){
-    document.getElementById('creatAccount').classList.remove("disabledBtn");
-}
+    // const isValidPassword = validatePassword(user.password);
+    // const isValidFirstName = validateName(user.fistName);
+    // const isValidLastName = validateName(user.lastName);
+    // const isValidEmail = validateEmail(user.email);
 
-function isInputValid(input) {
-    input.addEventListener('input', function (event) {
-        let target = event.target;
-        if (!isInputEmpty(target)) {
-            validForm = true
-            if (target.id === 'email') {
-                console.log(!validateEmail(target.value));
-                if (!validateEmail(target.value)) {
-                    addInputMessage(target, INVALID_EMAIL);
-                } else {
-                    removeInputMessage(target)
-                }
-            } else if (target.id === 'password') {
-                if (!validatePassword(target.value)) {
-                    addInputMessage(target, INVALID_PASSWORD);
-                } else {
-                    removeInputMessage(target)
-                }
-            }
-        }else {
-        }
-    });
-}
+    // if (
+    //     !isValidPassword ||
+    //     !isValidEmail ||
+    //     !isValidFirstName ||
+    //     !isValidLastName
+    // ) {
+    //     console.log('asd');
+    //     e.preventDefault();
+    // }
+    e.preventDefault();
+});
+

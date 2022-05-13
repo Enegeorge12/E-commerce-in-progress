@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Alata", sans-serif;
+}
+
+/*# sourceMappingURL=_body.css.map */
