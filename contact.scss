@@ -107,6 +107,7 @@ label{
 }
 input{
     width: 50%;
+    
 }
 .button{
     width: 100%;
@@ -119,12 +120,14 @@ input{
 
 }
 
+
 input[type="submit"]{
     background-color: $color;
     color: $colorw;
     padding: 10px;
     border: none;
     width: 100%;
+    border-radius: 20px;
 }
 input[type="reset"]{
     background-color: $color;
@@ -132,6 +135,7 @@ input[type="reset"]{
     padding: 10px;
     width: 100%;
     border: none;
+    border-radius: 20px;
 }
 
 @media (max-width:700px) {
