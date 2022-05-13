@@ -7,6 +7,15 @@ function addUser(userDetails) {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
+function updateUser(userDetails,userEmail){
+    let users = JSON.parse(localStorage.getItem('users') || "[]");
+
+    const index = users.findIndex(email => email == userEmail);
+    users.splice(index, 1);
+    users.push(userDetails);
+    localStorage.setItem("users", JSON.stringify(users))
+}
+
 function fetchUser(email) {
     let user = {};
 
@@ -29,7 +38,10 @@ function appendUserDetails() {
     if (user !== undefined) {
         let text = user.fistName + ' ' + user.lastName;
         let userContainer = document.getElementById('user-container');
+        let countCart = user.products.length;
+        let cartCountElement = document.getElementById('cartCount')
         
+        cartCountElement.append('('+countCart+')')
         if (userContainer !== null) {
             userContainer.append(text);
             document.getElementById('user-login-details').classList.add('display-none');
@@ -40,7 +52,6 @@ function appendUserDetails() {
 
 function checkUserLogIn(){
     let user = fetchUserLogin();
-    console.log(Object.keys(user).length);
     if (user === undefined || Object.keys(user).length ===  0) {
         window.location.href = 'index.html'
     }
@@ -51,10 +62,14 @@ function logout(){
     window.location.href = 'index.html'
 }
 
-function addToCart(){
+function addToCart(productId){
     let user = fetchUserLogin();
-    if (user !== undefined) {
-       console.log(user);
+    if (user !== undefined ||  Object.keys(user).length !==  0) {
+        console.log(productId)
+        if (!user.products.includes(productId)){
+            user.products.push(productId);
+            updateUser(user,user.email)
+        }
     }
 }
 

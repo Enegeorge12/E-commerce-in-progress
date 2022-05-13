@@ -9,7 +9,8 @@ form.addEventListener("submit", function (e) {
         password: form.elements.password.value,
         email: form.elements.email.value,
         country: select.options[select.selectedIndex].value,
-        city: form.elements.city.value
+        city: form.elements.city.value,
+        products: []
     }
 
     console.log(user);

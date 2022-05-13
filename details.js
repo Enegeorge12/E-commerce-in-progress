@@ -661,6 +661,8 @@ function createUser(producator, price, image, description,variety,name,country ,
   const productBtnCart=document.createElement("button");
   productBtnCart.setAttribute("type","submit")
   productBtnCart.setAttribute('id',"add-to-cart");
+  productBtnCart.setAttribute('product-id',product.id);
+  productBtnCart.setAttribute('onclick','addToCart('+product.id+')');
   productBtnCart.setAttribute("formaction","/cart.page.html");
 
   const productYear=document.createElement("div");
