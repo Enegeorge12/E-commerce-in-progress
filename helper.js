@@ -39,8 +39,8 @@ function appendUserDetails() {
         let text = user.fistName + ' ' + user.lastName;
         let userContainer = document.getElementById('user-container');
         let countCart = user.products.length;
-        let cartCountElement = document.getElementById('cartCount')
-        
+        let cartCountElement = document.getElementById('cartCount');
+
         cartCountElement.append('('+countCart+')')
         if (userContainer !== null) {
             userContainer.append(text);
