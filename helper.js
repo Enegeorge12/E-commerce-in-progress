@@ -1,9 +1,3 @@
-const INVALID_EMAIL = 'Email invalid !';
-const INPUT_REQUIRED = 'Campul este obligatoriu';
-const INPUT_MINIM = 'Campul trebuie sa contina cel putin 2 caractere';
-const INPUT_UPPERCASE = 'Campul trebuie sa inceapa cu o majuscula';
-const INVALID_PASSWORD = 'Parola trebuie sa aibe sa contina .....';
-const INVALID_LOGIN = 'Datele de logare nu sunt bune';
 
 //adauga useri la inregistrare
 function addUser(userDetails) {
@@ -46,7 +40,8 @@ function appendUserDetails() {
 
 function checkUserLogIn(){
     let user = fetchUserLogin();
-    if (user === undefined) {
+    console.log(Object.keys(user).length);
+    if (user === undefined || Object.keys(user).length ===  0) {
         window.location.href = 'index.html'
     }
 }
@@ -63,34 +58,83 @@ function addToCart(){
     }
 }
 
-function addInputMessage(input, message) {
-    const msg = input.parentNode.querySelector("small");
-    msg.innerText = message;
-}
+function validatePassword(password) {
+    removeError(password);
+    const specialChars = ["@", "#", "$", ".", "!"];
+    if (password.value.length < 8) {
+      showError(
+        "Parola trebuie sa contina cel putin 8 caractere",
+        password
+      );
+      return false;
+    }
+    let hasSpecialChar = false;
+    for (let specialChar of specialChars) {
+      if (password.value.includes(specialChar)) {
+        hasSpecialChar = true;
+      }
+    }
+    if (!hasSpecialChar) {
+      showError(
+        "Parola trebuie sa contina cel putin un caracter special",
+        password
+      );
+      return false;
+    }
 
-function removeInputMessage(input) {
-    const msg = input.parentNode.querySelector("small");
+    return true;
+  }
 
-    msg.innerText = '';
-}
+  function validateEmail(email) {
+    removeError(email);
+    const allowedDomains = ["yahoo.com", "gmail.com", "outlook.com"];
+    const characterCount = email.value
+      .split("")
+      .filter((character) => character === "@").length;
+    if (characterCount !== 1) {
+      showError("Email is not valid", email);
+      return false;
+    }
+    const [, domain] = email.value.split("@");
+    if (!allowedDomains.includes(domain)) {
+      showError("Email is not valid", email);
+      return false;
+    }
 
-function isInputEmpty(input) {
-    return input.value === "";
-}
+    return true;
+  }
 
-function validateEmail(input) {
-    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+  function validateName(field, errorName) {
+    removeError(field);
 
-    return isInputEmpty(input) || emailRegex.test(input);
-}
+    if (field.value.length === 0) {
+      showError("Campul este obligatoriu", field);
+      return false;
+    }
+    if (field.value.length < 2) {
+      showError("Campul trebuie sa contina cel putin 2 caractere", field);
+      return false;
+    }
+    if (field.value[0].toUpperCase() !== field.value[0]) {
+      showError("Campul trebuie sa inceapa cu o majuscula", field);
+      return false;
+    }
+    return true;
+  }
 
-function validatePassword(input) {
-    //Minimum eight characters, at least one letter, one number and one special character
-    let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/i;
+  function showError(message, field) {
+    const error = field.parentNode.querySelector("small");;
+    error.textContent = message;
+    field.parentElement.appendChild(error);
+    field.classList.add("invalid");
+  }
 
-    return isInputEmpty(input) || passwordRegex.test(input);
-}
+  function removeError(field) {
+    const error = field.parentNode.querySelector("small");
+    error.innerText = '';
+    field.classList.remove("invalid");
+  }
 
 ///////////////////////
-// checkUserLogIn();
+//checkUserLogIn();
 appendUserDetails();

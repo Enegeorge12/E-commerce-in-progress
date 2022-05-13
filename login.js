@@ -1,23 +1,3 @@
-const user1 = {
-    fistName: "john",
-    lastName: "doe",
-    password: "test",
-    email: "ene.2456@gmail.com",
-    country: "Bucuresti",
-    city: "Bragadiru"
-}
-
-const user2 = {
-    fistName: "ene",
-    lastName: "george",
-    password: "test",
-    email: "ene@gmail.com",
-    country: "Bucuresti",
-    city: "Bragadiru"
-}
-
-// addUser(user1);
-//   addUser(user2);
 
 const form = document.getElementById('loginForm');
 
@@ -26,8 +6,12 @@ form.addEventListener('submit', (event) => {
     let email = form.elements["email"].value;
     let password = form.elements["password"].value;
 
-    if(!validateEmail(email) || isInputEmpty(password)){
-        addInputMessage(password,INVALID_LOGIN);
+    const isValidEmail = validateEmail(form.elements.email);
+
+    if (
+        !isValidEmail 
+    ) {
+        e.preventDefault();
     }
 
     let user = fetchUser(email);
@@ -37,10 +21,10 @@ form.addEventListener('submit', (event) => {
             localStorage.setItem("userLogin", email);
             window.location.href = 'home.html';
         } else {
-            addInputMessage(form.elements["password"],INVALID_LOGIN);
+            showError("Datele de logare nu sunt bune", form.elements["password"]);
         }
     } else {
-        addInputMessage(form.elements["password"],INVALID_LOGIN);
+        showError("Datele de logare nu sunt bune", form.elements["password"]);
     }
 });
 
