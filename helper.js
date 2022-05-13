@@ -107,7 +107,7 @@ function validatePassword(password) {
       .split("")
       .filter((character) => character === "@").length;
     if (characterCount !== 1) {
-      showError("Email is not valid", email);
+      showError("Adresa de email invalida", email);
       return false;
     }
     const [, domain] = email.value.split("@");
