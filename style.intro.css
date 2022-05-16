@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: -webkit-box;
@@ -74,9 +79,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   padding: 10px;
   background-color: #ccc6c6;
@@ -93,7 +95,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 10px;
-  gap: 10px;
+  gap: 30px;
 }
 
 .container .register .formular .input-form {
@@ -107,21 +109,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  gap: 20px;
 }
 
 .container .register input {
-  margin-bottom: 20px;
   border-radius: 5px;
   outline: none;
   border: 1px solid #ccc6c6;
   padding-left: 20px;
   height: 40px;
-  width: 50%;
+  width: 100%;
+}
+
+.container .register input[type="password"] {
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.container .register .fa-eye {
+  margin-left: -40px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 .container .register label {
-  margin-bottom: 20px;
   font-size: 16px;
   width: 50%;
 }
@@ -130,8 +143,7 @@ body {
   height: 45px;
   border-radius: 5px;
   border: none;
-  width: 60%;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .container .register .field {
@@ -147,6 +159,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .container .register .field small {
@@ -199,7 +212,7 @@ body {
   .container .register {
     width: 100%;
     margin: 0px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding: 0px;
     text-align: center;
   }
@@ -210,34 +223,43 @@ body {
   .container .register .formular {
     margin: 0px;
     padding: 0px;
-    /* border: 1px solid red; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    gap: 0px;
+    gap: 20px;
     /* justify-content: center; */
     /* justify-items: center; */
   }
-  .container .register .formular .input1 {
-    /* border: 1px solid black; */
+  .container .register .input-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    /* margin:10px; */
-    /* justify-content: center; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .container .register .formular .input2 {
+  .container .register .fa-eye {
+    margin-left: -90px;
+    height: 100%;
     width: 100%;
-    /* border: 1px solid red; */
-    padding: 0px;
+    background-color: white;
   }
   .container .register input {
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
   }
   .container .register select {
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
   }
   .container .register select option {
     border: none;
@@ -247,9 +269,6 @@ body {
   }
   .container .register a:hover {
     text-decoration: underline;
-  }
-  .container .register label {
-    margin-bottom: 5px;
   }
 }
 
@@ -335,6 +354,11 @@ body {
   height: auto;
 }
 
+.parrent .right .fa-eye {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
 .parrent .right .forms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,8 +373,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* margin: 10px; */
-  gap: 10px;
+  margin: 10px;
+  gap: 30px;
   /* padding-left:30px; */
   width: 100%;
 }
@@ -386,14 +410,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding-bottom: 20px;
 }
 
 .parrent .right .forms .field small {
   color: red;
   text-align: center;
   position: absolute;
-  bottom: 0px;
+  bottom: -20px;
   left: 100px;
 }
 
@@ -440,6 +463,10 @@ a:hover {
     /* flex-direction: column; */
     height: 500px;
     width: 100%;
+  }
+  .parrent .fa-eye {
+    margin-left: -50px !important;
+    height: 100%;
   }
   .parrent .right {
     width: 100%;

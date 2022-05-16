@@ -2,6 +2,9 @@
   
   
   // intro.page formular
+  *{
+    box-sizing: border-box;
+  }
   body{
     margin: 0;
      display: flex; 
@@ -43,7 +46,7 @@
       flex-direction: column;
       display: flex;
       justify-content: center;
-      align-items: center;
+      // align-items: center;
       text-align: center;
       padding: 10px;
       //  border: 1px solid red; 
@@ -54,7 +57,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 10px;
-        gap: 10px;
+        gap: 30px;
         .input-form{
           // border:1px solid red; 
           width: 100%;
@@ -62,31 +65,49 @@
           //  flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 10px;   
+          
+          gap: 20px;
+            
         } 
       }
       input{
-       margin-bottom: 20px;    
+      //  margin-bottom: 20px;    
        border-radius: 5px;
        outline: none;
        border: 1px solid $intro;
        padding-left:20px;
        height: 40px;
       //  border: 1px solid red;
-       width: 50%;
+      //  width: 50%;
+      width: 100%;
+       
+      }
+    
+      input[type="password"]{
+        border: 0;
+        outline: 0;
+        width: 100%;
+      }
+      .fa-eye{
+        margin-left:-40px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
       }
       label{
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         font-size: 16px;
         // border: 1px solid red;
         width: 50%;
        }
+      
        select{
         height: 45px;;
         border-radius: 5px;
         border: none;
-        width: 60%;
-        margin-bottom: 20px; 
+        width: 100%;
+        // margin-bottom: 20px; 
+     
         
       }
       
@@ -99,6 +120,11 @@
         // border:1px solid red ;
         align-items: center;
         position: relative;
+        padding-bottom: 30px;
+        
+       
+        
+      
         
         small{
           color: red;
@@ -153,7 +179,7 @@
     .register{
       width:100%;
       margin: 0px;
-      /* border: 1px solid red; */
+      border: 1px solid red; 
       padding: 0px;
       text-align: center;
       img{
@@ -163,32 +189,34 @@
       .formular{
         margin:0px;
         padding:0px;
-       /* border: 1px solid red; */
+        
         flex-direction:column;
         width: 100%;
-        gap: 0px;
+        gap: 20px;
         /* justify-content: center; */
         /* justify-items: center; */
-        .input1{
-          /* border: 1px solid black; */
-          width: 100%;
-          /* margin:10px; */
-          /* justify-content: center; */
-          
-        }
-        .input2{
-          width: 100%;
-          /* border: 1px solid red; */
-          padding: 0px;
-        }
+      }
+      .input-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .fa-eye{
+        margin-left:-90px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
       }
       input{
         margin-left:20px;
          margin-right: 20px;
+         width: 100%;
        }
        select{
          margin-left:20px;
          margin-right: 20px;
+         width: 100%;
          option{
            border: none;
          }
@@ -199,9 +227,7 @@
           text-decoration: underline;
         }
        }
-       label{
-         margin-bottom: 5px;
-       }
+      
     }
    }
  }
@@ -253,6 +279,10 @@ width: 50%;
     width: 70%;
     height: auto;
   }
+  .fa-eye{
+    margin-left: -20px;
+    margin-top: -20px;;
+  }
   .forms{
     //  border: 2px solid violet; 
     display: flex;
@@ -260,8 +290,8 @@ width: 50%;
     justify-content:center;
     align-items: center;
     
-    /* margin: 10px; */
-    gap: 10px;
+     margin: 10px;
+    gap: 30px;
     /* padding-left:30px; */
     width: 100%;
     input{
@@ -286,14 +316,15 @@ width: 50%;
         align-items: center;
         justify-content: space-between;
         position: relative;
+        // flex-wrap: wrap;
         // border: 1px solid red;
-        padding-bottom: 20px  ;
+        // padding-bottom: 20px  ;
         
         small{
           color: red;
           text-align: center;
           position: absolute;
-          bottom:0px;
+          bottom: -20px;
           left: 100px;
         }
       }
@@ -344,6 +375,13 @@ section{
     /* flex-direction: column; */
     height: 500px;
     width: 100%;
+  }
+  .fa-eye{
+    margin-left:-50px !important;
+    // margin-top:-40px ;
+    // border: 1px solid red;
+    height: 100%;
+   
   }
  .right{
    width: 100%;

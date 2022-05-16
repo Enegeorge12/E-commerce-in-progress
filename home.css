@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .nav_bar {
-  background-color: rgb(87, 30, 26);
+  background-color: #571e1a;
   width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 #nav {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  background-color: rgb(87, 30, 26);
+  background-color: #571e1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 70px;
 }
 
@@ -37,7 +48,7 @@
 #nav li ul.dropdown {
   min-width: 100%;
   /*Set width of the dropdown*/
-  background-color: rgb(87, 30, 26);
+  background-color: #571e1a;
   display: none;
   position: absolute;
   z-index: 5;
@@ -63,14 +74,21 @@
     display: inline-block;
     width: 100%;
   }
-
   #nav {
     display: none;
     position: relative;
-    animation: myNav 1s linear;
+    -webkit-animation: myNav 1s linear;
+            animation: myNav 1s linear;
     gap: 20px;
   }
-
+  @-webkit-keyframes myNav {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 0px;
+    }
+  }
   @keyframes myNav {
     from {
       left: -200px;
@@ -88,21 +106,41 @@
     cursor: pointer;
   }
 }
+
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   gap: 10px;
 }
 
 .profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 50%;
   margin-right: 230px;
@@ -111,6 +149,8 @@
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
   /* border: 1px solid black; */
@@ -129,32 +169,47 @@
 
 @media (max-width: 700px) {
   .header {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
   }
-
   .profil {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin: 0px;
     margin-bottom: 20px;
   }
-
   .logo {
     width: 100%;
     margin: 0px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
-  background-color: rgb(87, 30, 26);
+  background-color: #571e1a;
   color: white;
   grid-area: footer;
   text-align: center;
@@ -192,27 +247,31 @@ footer a:hover {
 
 @media (max-width: 700px) {
   .footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-items: center;
     /* justify-content: center; */
     text-align: center;
     width: 100%;
     /* margin-bottom:20px; */
   }
-
   .list {
     text-align: center;
     padding: 10px;
   }
 }
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Alata", sans-serif;
+  font-family: 'Alata', sans-serif;
 }
 
 .space {
@@ -225,8 +284,9 @@ body {
     margin: 0px;
   }
 }
+
 h1, h2, h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 p, li, a, button {
@@ -234,10 +294,17 @@ p, li, a, button {
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   justify-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-image: url("https://vinimondo.ro/sites/default/files/styles/620x492/public/vinimondo_3_0_0.jpg?itok=rF4PpcIJ");
   background-repeat: no-repeat;
@@ -248,52 +315,87 @@ p, li, a, button {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   justify-items: flex-start;
 }
 
 .brand-container {
   margin-top: 40px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 10px;
   gap: 20px;
 }
+
 .brand-container .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
 }
+
 .brand-container .article a {
   position: relative;
   color: black;
-  border: 3px solid rgb(87, 30, 26);
+  border: 3px solid #571e1a;
   padding: 10px;
-  animation: mymovel 3s linear;
+  -webkit-animation: mymovel 3s linear;
+          animation: mymovel 3s linear;
   width: 30%;
   text-align: center;
 }
+
 .brand-container .fa {
   padding-right: 20px;
 }
+
 .brand-container p {
   position: relative;
   padding: 10px;
-  animation: mymovel 3s linear;
+  -webkit-animation: mymovel 3s linear;
+          animation: mymovel 3s linear;
   width: 100%;
 }
+
 .brand-container h3 {
   position: relative;
-  animation: mymovel 3s linear;
+  -webkit-animation: mymovel 3s linear;
+          animation: mymovel 3s linear;
   padding: 10px;
 }
+
 .brand-container .article img {
   width: 100%;
-  animation: mymove 3s linear;
+  -webkit-animation: mymove 3s   linear;
+          animation: mymove 3s   linear;
   position: relative;
 }
+
+@-webkit-keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
 @keyframes mymove {
   from {
     left: -300px;
@@ -302,6 +404,16 @@ main {
     left: 0px;
   }
 }
+
+@-webkit-keyframes mymovel {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
 @keyframes mymovel {
   from {
     right: -300px;
@@ -330,21 +442,21 @@ a {
 
 @media (max-width: 700px) {
   .brand-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
-
   .article {
     width: 100%;
   }
   .article p {
     padding: 0px;
   }
-
   .list {
     text-align: center;
     padding: 10px;
   }
 }
-
 /*# sourceMappingURL=home.css.map */
