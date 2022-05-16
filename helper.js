@@ -75,7 +75,7 @@ function addToCart(productId){
 
 function validatePassword(password) {
     removeError(password);
-    const specialChars = ["@", "#", "$", ".", "!"];
+    const specialChars = ["@", "#", "$", ".", "!","?"];
     if (password.value.length < 8) {
       showError(
         "Parola trebuie sa contina cel putin 8 caractere",
@@ -91,7 +91,7 @@ function validatePassword(password) {
     }
     if (!hasSpecialChar) {
       showError(
-        "Parola trebuie sa contina cel putin un caracter special",
+        "Parola trebuie sa contina cel putin un caracter special "+ specialChars,
         password
       );
       return false;
