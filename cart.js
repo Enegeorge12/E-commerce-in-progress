@@ -628,7 +628,7 @@ window.addEventListener('load', function () {
                   '<input type="number" value="1" />'+
                 '</div>'+
                 '<div class="price">'+product.price+'</div>'+
-              '</div>'+
+              '</div>'
 
               productList.innerHTML(html);
         }
