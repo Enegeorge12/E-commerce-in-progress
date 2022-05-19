@@ -1,4 +1,5 @@
 @import "variabiles";  
+@import"body";
   
   
   // intro.page formular
@@ -131,7 +132,8 @@
           // text-align: center;
           position: absolute;
           bottom:0px;
-          left: 120px;
+          left: 100px;
+          top:40px;
         }
         
 
@@ -177,8 +179,8 @@
       /* border: 2px solid black; */
     }
     small{
-      left: 150px !important;
-      
+      left: 120px !important;
+      top: 50px;
     }
  
     .register{
@@ -227,7 +229,7 @@
          }
         }
        a{
-         margin-bottom: 10px;
+         margin-bottom: 20px;
          &:hover{
           text-decoration: underline;
         }
@@ -388,7 +390,9 @@ section{
     height: 100%;
    
   }
-  
+  a{
+    margin-bottom: 20px;
+  }
  .right{
    width: 100%;
     margin: 0px;
@@ -406,9 +410,7 @@ section{
       button{
         width: 50%;
       }
-      a{
-        margin-bottom: 20px;
-      }
+      
     }
   }
  

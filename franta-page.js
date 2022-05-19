@@ -615,7 +615,7 @@ function createProduct(prodC){
         const a_details = document.createElement("a");
         a_details.classList.add("a-details");
         a_details.textContent = "Detalii";
-        a_details.href = '/product_details.html?id='+i.id;
+        a_details.href ="product_details.html?id="+i.id;
       
         elem.appendChild(a_details);
       

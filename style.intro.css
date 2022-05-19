@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Alata', sans-serif;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -166,7 +178,8 @@ body {
   color: red;
   position: absolute;
   bottom: 0px;
-  left: 120px;
+  left: 100px;
+  top: 40px;
 }
 
 .container .register button {
@@ -209,7 +222,8 @@ body {
     /* border: 2px solid black; */
   }
   .container small {
-    left: 150px !important;
+    left: 120px !important;
+    top: 50px;
   }
   .container .register {
     width: 100%;
@@ -266,7 +280,7 @@ body {
     border: none;
   }
   .container .register a {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .container .register a:hover {
     text-decoration: underline;
@@ -469,6 +483,9 @@ a:hover {
     margin-left: -50px !important;
     height: 100%;
   }
+  .parrent a {
+    margin-bottom: 20px;
+  }
   .parrent .right {
     width: 100%;
     margin: 0px;
@@ -486,9 +503,6 @@ a:hover {
   }
   .parrent .right .forms button {
     width: 50%;
-  }
-  .parrent .right .forms a {
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.intro.css.map */

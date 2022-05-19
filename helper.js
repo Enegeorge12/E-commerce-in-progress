@@ -112,7 +112,7 @@ function validatePassword(password) {
     }
     const [, domain] = email.value.split("@");
     if (!allowedDomains.includes(domain)) {
-      showError("Adresa de email invalida.Trebuie sa contina: "+allowedDomains, email);
+      showError("Adresa de email invalida.", email);
       return false;
     }
 
