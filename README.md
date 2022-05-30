@@ -7,11 +7,11 @@ Link: https://enegeorge12.github.io/E-commerce-in-progress/
 
 ## Desktop screen:
 ![2022-05-30 (6)](https://user-images.githubusercontent.com/96048064/170925262-c57657f0-e366-46d0-b9ac-62ecf720245a.png)
-![2022-05-30 (7)](https://user-images.githubusercontent.com/96048064/170925266-0b7198db-0b03-4874-bff6-3b65c813437d.png)
+
 ![2022-05-30 (8)](https://user-images.githubusercontent.com/96048064/170925271-10d49a2b-9fd2-4c87-b34f-7096188e5b17.png)
 ![2022-05-30 (9)](https://user-images.githubusercontent.com/96048064/170925280-ad128073-1731-4351-9508-069df58dc4b6.png)
 
 ## Mobile screen:
-![WhatsApp Image 2022-05-30 at 09 02 57 (2)](https://user-images.githubusercontent.com/96048064/170927354-acca2803-7d58-4fcc-a829-c261d76c223f.jpeg)
+
 ![WhatsApp Image 2022-05-30 at 08 59 01 (2)](https://user-images.githubusercontent.com/96048064/170927268-ff796f49-4c2f-4749-b966-82223dcb5c54.jpeg)
 ![WhatsApp Image 2022-05-30 at 08 59 01 (3)](https://user-images.githubusercontent.com/96048064/170927297-360c50a3-109f-437f-b74f-10ad733b98af.jpeg)
